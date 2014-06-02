@@ -1,0 +1,23 @@
+---
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "build"
+
+baseurl: "http://hyde.getpoole.com"
+title: "Hyde"
+
+permalinks:
+    post: /:year/:month/:title/
+
+params:
+    # used in atom (RSS) feed
+    author: Your name here!
+    tagline: "A Hugo Theme"
+    description: >
+        A brazen two-column <a href="http://hugo.spf13.com/"
+        target="_blank">Hugo</a> theme that pairs a prominent sidebar with
+        uncomplicated content. Made by <a href="https://twitter.com/mdo"
+        target="_blank">@mdo</a> and ported to Hugo by <a
+        href="https://github.com/ciarand" target="_blank">@ciarand</a>.
+    repo: "https://github.com/ciarand/hyde-for-hugo"
+    version: "2.0.0"
