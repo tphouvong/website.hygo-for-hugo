@@ -3,21 +3,19 @@ contentdir: "content"
 layoutdir: "layouts"
 publishdir: "build"
 
-baseurl: "http://hyde.getpoole.com"
-title: "Hyde"
+baseurl: "http://www.houvong.net"
+title: "Zbra! Hey!"
 
 permalinks:
     post: /:year/:month/:title/
 
 params:
     # used in atom (RSS) feed
-    author: Your name here!
-    tagline: "A Hugo Theme"
+    author: Tien Peng HOUVONG
+    GitHubUser: "tphouvong"
+    tagline: "Zbra! Hey!"
     description: >
-        A brazen two-column <a href="http://hugo.spf13.com/"
-        target="_blank">Hugo</a> theme that pairs a prominent sidebar with
-        uncomplicated content. Made by <a href="https://twitter.com/mdo"
-        target="_blank">@mdo</a> and ported to Hugo by <a
-        href="https://github.com/ciarand" target="_blank">@ciarand</a>.
-    repo: "https://github.com/ciarand/hyde-for-hugo"
-    version: "2.0.0"
+        Yet another blog about IT stuff from a junior network engineer.
+    repo: "https://github.com/tphouvong"
+    version: "0.0.2"
+---

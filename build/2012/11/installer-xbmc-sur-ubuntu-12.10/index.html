@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr-fr">
+    <head>
+        <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        
+            Installer XBMC sur Ubuntu 12.10 &middot; Zbra! Hey!
+        
+    </title>
+
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/poole.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/public/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico">
+
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:1313/atom.xml">
+</head>
+
+    </head>
+
+    <body class="layout-reverse theme-base-08">
+        <div class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="sidebar-about">
+            <h1>Zbra! Hey!</h1>
+            <p class="lead">Yet another blog about IT stuff from a junior network engineer.
+</p>
+        </div>
+
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a href="http://localhost:1313/">Home</a>
+            </li>
+
+            
+
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+                    
+                        <li class="sidebar-nav-item">
+                            <a href="http://localhost:1313/about">About</a>
+                        </li>
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+                    
+                        <li class="sidebar-nav-item">
+                            <a href="http://localhost:1313/archive">Archive</a>
+                        </li>
+                
+            
+
+                
+                
+                
+            
+
+            
+            
+            
+
+            <li class="sidebar-nav-item">
+                <a href="https://github.com/tphouvong">GitHub project</a>
+            </li>
+
+        </ul>
+
+        <p>&copy; 2012+ TP HOUVONG</p>
+        <p>Powered by <a href="http://hugo.spf13.com/">Hugo</a> and
+          <a href="http://hyde.getpoole.com/">Hyde</a></p>
+    </div>
+</div>
+
+
+        <div class="content container">
+            <div class="post">
+    <h1 class="post-title">Installer XBMC sur Ubuntu 12.10</h1>
+    <span class="post-date">23 Nov 2012</span>
+    
+
+<h2 id="toc_0">Xbox Media Center&hellip;</h2>
+
+<p><img class="img-center center-block" src="http://localhost:1313/img/xbmc.gif" title="xbmc" /></p>
+
+<p>&hellip; plus connu sous le nom d&rsquo;<a href="http://xbmc.org/">XBMC</a>, est un lecteur multimédia sous licence GNU GPL.
+Logiciel destiné initialement pour la console Xbox (la première), l&rsquo;équipe de dév l&rsquo;a porté sur les OS tels
+que Mac OS X, Windows, mais aussi Ubuntu. A noter que je n&rsquo;utilise pas la fonction <a href="http://fr.wikipedia.org/wiki/Personal_Video_Recorder">PVR</a>
+d&rsquo;XBMC, puisque je n&rsquo;ai pas de carte d&rsquo;acquisition TV pour recevoir et enregistrer les chaines de TV directement
+sur mon HTPC.</p>
+
+<h2 id="toc_1">L&rsquo;installation</h2>
+
+<p>Il y a 3 méthodes d&rsquo;installation, pour tous les goûts.</p>
+
+<h3 id="toc_2">1. le mode fénéant</h3>
+
+<p>Depuis la 12.04, xmbc est dans les dépôts officiel. L&rsquo;installation est donc assez simple</p>
+
+<pre><code class="shell">$ sudo apt-get install xbmc
+</code></pre>
+
+<p><em>Ewh Voualaaah!</em> comme dirait les américains.</p>
+
+<h3 id="toc_3">2. via <a href="https://help.launchpad.net/Packaging/PPA">PPA</a></h3>
+
+<pre><code class="shell">$ sudo apt-get install python-software-properties pkg-config
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:team-xbmc/ppa
+$ sudo apt-get update
+$ sudo apt-get install xbmc
+</code></pre>
+
+<p>Par ailleurs, il est possible de choisir un autre répertoire, entre le ppa basic, unstable et le nightly build</p>
+
+<h3 id="toc_4">3. la version sekshy</h3>
+
+<p>Une compilation des sources des plus basiques, sans trop de fioriture.</p>
+
+<p>1.récupérer les sources avec git</p>
+
+<pre><code class="shell">$ git clone git://github.com/xbmc/xbmc.git xbmc
+</code></pre>
+
+<p>2.installer les dépendances</p>
+
+<pre><code class="shell">$ sudo apt-get install automake autopoint bison build-essential ccache cmake curl cvs default-jre fp-compiler
+gawk gdc gettext git-core gperf libasound2-dev libass-dev libavcodec-dev libavfilter-dev libavformat-dev
+libavutil-dev libbluetooth-dev libbluray-dev libbluray1 libboost-dev libboost-thread-dev libbz2-dev libcap-dev
+libcdio-dev libcec-dev libcec1 libcrystalhd-dev libcrystalhd3 libcurl3 libcurl4-gnutls-dev libcwiid-dev libcwiid1
+libdbus-1-dev libenca-dev libflac-dev libfontconfig-dev libfreetype6-dev libfribidi-dev libglew-dev libiso9660-dev
+libjasper-dev libjpeg-dev libltdl-dev liblzo2-dev libmad0-dev libmicrohttpd-dev libmodplug-dev libmp3lame-dev
+libmpeg2-4-dev libmpeg3-dev libmysqlclient-dev libnfs-dev libogg-dev libpcre3-dev libplist-dev libpng-dev
+libpostproc-dev libpulse-dev libsamplerate-dev libsdl-dev libsdl-gfx1.2-dev libsdl-image1.2-dev
+libsdl-mixer1.2-dev libshairport-dev libsmbclient-dev libsqlite3-dev libssh-dev libssl-dev libswscale-dev
+libtiff-dev libtinyxml-dev libtool libudev-dev libusb-dev libva-dev libva-egl1 libva-tpi1 libvdpau-dev libvorbisenc2
+libxml2-dev libxmu-dev libxrandr-dev libxrender-dev libxslt1-dev libxt-dev libyajl-dev mesa-utils nasm pmount
+python-dev python-imaging python-sqlite swig unzip yasm zip zlib1g-dev libtag1-dev
+</code></pre>
+
+<p>3.et on compile</p>
+
+<pre><code class="shell">$ cd *répertoireXBMC_depuisGIT*/xbmc/
+$ ./bootstrap
+$ ./configure
+$ make -j2
+$ make install
+</code></pre>
+
+<p>L&rsquo;option <strong>-j2</strong> permet de compiler les sources en utilisant la parallélisation des <a href="http://www.blaess.fr/christophe/2012/01/14/parallelisation-de-compilations/">jobs</a> de votre processeur
+si ce dernier supportant l&rsquo;hyper-threading ou est est multi-coeurs. Dans mon cas, j&rsquo;ai un dual core.</p>
+
+<p>Et c&rsquo;est fini pour l&rsquo;install!</p>
+
+<h3 id="toc_5">Source :</h3>
+
+<ul>
+<li><a href="http://wiki.xbmc.org/index.php?title=Installing_XBMC_for_Linux">Installation 1</a></li>
+<li><a href="http://wiki.xbmc.org/index.php?title=HOW-TO:Compile_XBMC_for_Ubuntu">Installation 2</a></li>
+</ul>
+
+</div>
+
+        </div>
+    </body>
+</html>

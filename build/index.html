@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr-fr">
+    <head>
+        <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        
+            Homepage &middot; Zbra! Hey!
+        
+    </title>
+
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/poole.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/hyde.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/public/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico">
+
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:1313/atom.xml">
+</head>
+
+    </head>
+
+    <body class="layout-reverse theme-base-08">
+        <div class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="sidebar-about">
+            <h1>Zbra! Hey!</h1>
+            <p class="lead">Yet another blog about IT stuff from a junior network engineer.
+</p>
+        </div>
+
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item active">
+                <a href="http://localhost:1313/">Home</a>
+            </li>
+
+            
+
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+                    
+                        <li class="sidebar-nav-item">
+                            <a href="http://localhost:1313/about">About</a>
+                        </li>
+                
+            
+
+                
+                
+                
+            
+
+                
+                
+                
+                    
+                        <li class="sidebar-nav-item">
+                            <a href="http://localhost:1313/archive">Archive</a>
+                        </li>
+                
+            
+
+                
+                
+                
+            
+
+            
+            
+            
+
+            <li class="sidebar-nav-item">
+                <a href="https://github.com/tphouvong">GitHub project</a>
+            </li>
+
+        </ul>
+
+        <p>&copy; 2012+ TP HOUVONG</p>
+        <p>Powered by <a href="http://hugo.spf13.com/">Hugo</a> and
+          <a href="http://hyde.getpoole.com/">Hyde</a></p>
+    </div>
+</div>
+
+
+        <div class="content container">
+            <div class="intro">
+    
+</div>
+<div class="posts">
+    
+
+    
+    
+        
+        
+
+            
+            
+
+            <div class="post">
+                <h1 class="post-title">
+                    <a href="http://localhost:1313/2014/04/differences-between-hugo-and-jekyll/">Differences between Hugo and Jekyll</a>
+                </h1>
+
+                <span class="post-date">
+                    26 Apr 2014
+                </span>
+
+                
+
+<p>Theming in <a href="http://hugo.spf13.com/">Hugo</a> presents a unique set of challenges to both the experienced
+and novice Jekyll themer. Hugo&rsquo;s templates aren&rsquo;t built with native support for
+nested contexts (layouts) like Jekyll&rsquo;s, so the enterprising themer needs to
+create those facilities themselves. Luckily, using a series of conventions
+not dissimilar to Jekyll&rsquo;s makes the process fairly painless.</p>
+
+<p>Let&rsquo;s examine some of the hacks that this theme uses.</p>
+
+<h2 id="toc_0">Layouts</h2>
+
+<p>Since Hugo&rsquo;s natural behavior doesn&rsquo;t include any facilities for true extendable
+layouts the naive approach is to store common HTML elements like the <code>&lt;head&gt;</code>
+and the doctype in &ldquo;partials.&rdquo; Unfortunately, this has several downsides:</p>
+
+<ul>
+<li><p>Editor support for HTML elements without closing tags is lacking</p></li>
+
+<li><p>It forces each layout file to include the same partials in the same order in
+order to maintain a consistent appearance</p></li>
+</ul>
+
+<p>Instead, this is the approach I&rsquo;ve taken:</p>
+
+<ul>
+<li><p>Use the `layouts/_defaults/single.html&rdquo; as the entry point for every page and
+post in the theme. This means we have one unified layout that guarantees an
+identical starting structure for every page.</p></li>
+
+<li><p>Set a new default layout file that&rsquo;s used instead of the <code>section/single.html</code>
+file (in this case it&rsquo;s a <code>section/layout.html</code> file).</p></li>
+
+<li><p>Use custom section types for the home and archive pages.</p></li>
+</ul>
+
+<h2 id="toc_1">Indexes</h2>
+
+<p>Support for indexes in Hugo is… interesting. The <code>.Site.Indexes</code> map doesn&rsquo;t have
+knowledge of the section-specific indexes - only the user defined indexes like
+&ldquo;tags&rdquo; and &ldquo;categories.&rdquo; Since I&rsquo;d rather not force any taxonomical organization
+on the user I&rsquo;ve opted to instead use a new content type, &ldquo;index,&rdquo; that uses a
+custom parameter (&ldquo;data&rdquo;) to store the content type to index.</p>
+
+<p>So, section-specific indexes have front matter that looks like this:</p>
+
+<p>title:  &ldquo;Archive&rdquo;  # the title of the page
+url:    &ldquo;/archive&rdquo; # the URL of the page
+type:   &ldquo;index&rdquo;    # (req&rsquo;d) marks this as an index
+data:   &ldquo;post&rdquo;     # (req&rsquo;d) the type to index.</p>
+
+<h2 id="toc_2">How do I create a new content type?</h2>
+
+<p>Easy. Let&rsquo;s say we&rsquo;re creating a <code>quote</code> content type. Create a new .md file in
+<code>content</code>. Let&rsquo;s call it <code>famous-quote.md</code>. Add the following content:</p>
+
+<!-- Using PHP b/c there's not a Pygments filter for markdown + yaml -->
+
+<hr />
+
+<h1 id="toc_3">this is the important one</h1>
+
+<p>type: quote</p>
+
+<h1 id="toc_4">standard frontmatter</h1>
+
+<p>title: Famous Quote
+slug:  famous-quote
+date:  2014-04-26</p>
+
+<h1 id="toc_5">We can also include custom attributes in any content</h1>
+
+<h1 id="toc_6">these will be accessible under .Params.paramname</h1>
+
+<h1 id="toc_7">Check <a href="http://hugo.spf13.com/layout/variables">http://hugo.spf13.com/layout/variables</a> for more info</h1>
+
+<h2 id="toc_8">source: George Washington</h2>
+
+<p>Be courteous to all, but intimate with few, and let those few be well tried before you give them your confidence.</p>
+
+<p>Now, obviously we want quotes to be displayed differently from a standard post.
+Let&rsquo;s create a custom template. Create a new folder in <code>layouts</code> for your
+<code>quote</code> layout. Then add the <code>layouts/quote/layout.html</code> file. It will probably
+look something like this:</p>
+
+<blockquote>
+    {{ .Content }}
+
+    {{ if .Params.source }}
+        <cite>{{ .Params.source }}</cite>
+    {{ end }}
+</blockquote>
+
+<p>That&rsquo;s it! Our inspiring new quote should be displaying (at the slug we
+specified earlier) in our new template. Easy!</p>
+
+            </div>
+         
+    
+        
+        
+
+            
+            
+
+            <div class="post">
+                <h1 class="post-title">
+                    <a href="http://localhost:1313/2013/12/introducing-hyde/">Introducing Hyde</a>
+                </h1>
+
+                <span class="post-date">
+                    28 Dec 2013
+                </span>
+
+                
+
+<p>Hyde is a brazen two-column <a href="http://hugo.spf13.com/">Hugo</a> theme, ported from its
+<a href="https://github.com/poole/hyde">namesake</a> for use with Hugo, that pairs a prominent sidebar with
+uncomplicated content.  It&rsquo;s based on <a href="http://getpoole.com">Poole</a>, the Jekyll
+butler.</p>
+
+<h3 id="toc_0">Built on Poole</h3>
+
+<p>Since this port truly stands on the shoulders of giants, we get all of the
+following benefits:</p>
+
+<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation
+for Jekyll themes by <a href="https://twitter.com/mdo">@mdo</a>. Poole, and every theme
+built on it (like Hyde here) includes the following:</p>
+
+<ul>
+<li><p>Complete Hugo setup included. Layouts, config, a 404 page, an archive page,
+and even an RSS feed are all included. Thanks @mdo!</p></li>
+
+<li><p>Mobile friendly design and development</p></li>
+
+<li><p>Easily scalable text and component sizing with <code>rem</code> units in the CSS</p></li>
+
+<li><p>Support for a wide gamut of HTML elements</p></li>
+
+<li><p>Syntax highlighting, courtesy Pygments (the Python-based code snippet
+highlighter)</p></li>
+</ul>
+
+<h3 id="toc_1">Hyde features</h3>
+
+<p>In addition to the features of Poole, Hyde adds the following:</p>
+
+<ul>
+<li><p>Sidebar includes support for textual modules and a dynamically generated
+navigation with active link support</p></li>
+
+<li><p>Two orientations for content and sidebar, default (left sidebar) and
+<a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar),
+available via <code>&lt;body&gt;</code> classes</p></li>
+
+<li><p><a href="https://github.com/poole/hyde#themes">Eight optional color schemes</a>,
+available via <code>&lt;body&gt;</code> classes</p></li>
+</ul>
+
+<p><a href="https://github.com/poole/hyde">Head to the readme</a> to learn more.</p>
+
+<h3 id="toc_2">Browser support</h3>
+
+<p>Hyde is by preference a forward-thinking project. In addition to the latest
+versions of Chrome, Safari (mobile and desktop), and Firefox, it is only
+compatible with Internet Explorer 9 and above.</p>
+
+<h3 id="toc_3">Download</h3>
+
+<p>Hyde is developed on and hosted with GitHub. Head to the <a href="https://github.com/ciarand/hyde-for-hugo">Github
+repository</a> for downloads, bug reports, and features requests.
+Alternatively, visit the original Hyde (for Jekyll) <a href="https://github.com/poole/hyde">here</a>.</p>
+
+<p>Thanks!</p>
+
+            </div>
+         
+    
+        
+        
+
+            
+            
+
+            <div class="post">
+                <h1 class="post-title">
+                    <a href="http://localhost:1313/2012/11/installer-xbmc-sur-ubuntu-12.10/">Installer XBMC sur Ubuntu 12.10</a>
+                </h1>
+
+                <span class="post-date">
+                    23 Nov 2012
+                </span>
+
+                
+
+<h2 id="toc_0">Xbox Media Center&hellip;</h2>
+
+<p><img class="img-center center-block" src="http://localhost:1313/img/xbmc.gif" title="xbmc" /></p>
+
+<p>&hellip; plus connu sous le nom d&rsquo;<a href="http://xbmc.org/">XBMC</a>, est un lecteur multimédia sous licence GNU GPL.
+Logiciel destiné initialement pour la console Xbox (la première), l&rsquo;équipe de dév l&rsquo;a porté sur les OS tels
+que Mac OS X, Windows, mais aussi Ubuntu. A noter que je n&rsquo;utilise pas la fonction <a href="http://fr.wikipedia.org/wiki/Personal_Video_Recorder">PVR</a>
+d&rsquo;XBMC, puisque je n&rsquo;ai pas de carte d&rsquo;acquisition TV pour recevoir et enregistrer les chaines de TV directement
+sur mon HTPC.</p>
+
+<h2 id="toc_1">L&rsquo;installation</h2>
+
+<p>Il y a 3 méthodes d&rsquo;installation, pour tous les goûts.</p>
+
+<h3 id="toc_2">1. le mode fénéant</h3>
+
+<p>Depuis la 12.04, xmbc est dans les dépôts officiel. L&rsquo;installation est donc assez simple</p>
+
+<pre><code class="shell">$ sudo apt-get install xbmc
+</code></pre>
+
+<p><em>Ewh Voualaaah!</em> comme dirait les américains.</p>
+
+<h3 id="toc_3">2. via <a href="https://help.launchpad.net/Packaging/PPA">PPA</a></h3>
+
+<pre><code class="shell">$ sudo apt-get install python-software-properties pkg-config
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:team-xbmc/ppa
+$ sudo apt-get update
+$ sudo apt-get install xbmc
+</code></pre>
+
+<p>Par ailleurs, il est possible de choisir un autre répertoire, entre le ppa basic, unstable et le nightly build</p>
+
+<h3 id="toc_4">3. la version sekshy</h3>
+
+<p>Une compilation des sources des plus basiques, sans trop de fioriture.</p>
+
+<p>1.récupérer les sources avec git</p>
+
+<pre><code class="shell">$ git clone git://github.com/xbmc/xbmc.git xbmc
+</code></pre>
+
+<p>2.installer les dépendances</p>
+
+<pre><code class="shell">$ sudo apt-get install automake autopoint bison build-essential ccache cmake curl cvs default-jre fp-compiler
+gawk gdc gettext git-core gperf libasound2-dev libass-dev libavcodec-dev libavfilter-dev libavformat-dev
+libavutil-dev libbluetooth-dev libbluray-dev libbluray1 libboost-dev libboost-thread-dev libbz2-dev libcap-dev
+libcdio-dev libcec-dev libcec1 libcrystalhd-dev libcrystalhd3 libcurl3 libcurl4-gnutls-dev libcwiid-dev libcwiid1
+libdbus-1-dev libenca-dev libflac-dev libfontconfig-dev libfreetype6-dev libfribidi-dev libglew-dev libiso9660-dev
+libjasper-dev libjpeg-dev libltdl-dev liblzo2-dev libmad0-dev libmicrohttpd-dev libmodplug-dev libmp3lame-dev
+libmpeg2-4-dev libmpeg3-dev libmysqlclient-dev libnfs-dev libogg-dev libpcre3-dev libplist-dev libpng-dev
+libpostproc-dev libpulse-dev libsamplerate-dev libsdl-dev libsdl-gfx1.2-dev libsdl-image1.2-dev
+libsdl-mixer1.2-dev libshairport-dev libsmbclient-dev libsqlite3-dev libssh-dev libssl-dev libswscale-dev
+libtiff-dev libtinyxml-dev libtool libudev-dev libusb-dev libva-dev libva-egl1 libva-tpi1 libvdpau-dev libvorbisenc2
+libxml2-dev libxmu-dev libxrandr-dev libxrender-dev libxslt1-dev libxt-dev libyajl-dev mesa-utils nasm pmount
+python-dev python-imaging python-sqlite swig unzip yasm zip zlib1g-dev libtag1-dev
+</code></pre>
+
+<p>3.et on compile</p>
+
+<pre><code class="shell">$ cd *répertoireXBMC_depuisGIT*/xbmc/
+$ ./bootstrap
+$ ./configure
+$ make -j2
+$ make install
+</code></pre>
+
+<p>L&rsquo;option <strong>-j2</strong> permet de compiler les sources en utilisant la parallélisation des <a href="http://www.blaess.fr/christophe/2012/01/14/parallelisation-de-compilations/">jobs</a> de votre processeur
+si ce dernier supportant l&rsquo;hyper-threading ou est est multi-coeurs. Dans mon cas, j&rsquo;ai un dual core.</p>
+
+<p>Et c&rsquo;est fini pour l&rsquo;install!</p>
+
+<h3 id="toc_5">Source :</h3>
+
+<ul>
+<li><a href="http://wiki.xbmc.org/index.php?title=Installing_XBMC_for_Linux">Installation 1</a></li>
+<li><a href="http://wiki.xbmc.org/index.php?title=HOW-TO:Compile_XBMC_for_Ubuntu">Installation 2</a></li>
+</ul>
+
+            </div>
+         
+    
+        
+        
+
+            
+            
+
+            <div class="post">
+                <h1 class="post-title">
+                    <a href="http://localhost:1313/2012/11/test/">Test</a>
+                </h1>
+
+                <span class="post-date">
+                    21 Nov 2012
+                </span>
+
+                <p>Un petit blog orienté sur les nouvelles technologies, notamment réseaux, télécoms, systèmes&hellip; Et quelques geekeries en tout genre.</p>
+
+            </div>
+         
+    
+        
+        
+
+            
+            
+
+            <div class="post">
+                <h1 class="post-title">
+                    <a href="http://localhost:1313/2012/02/example-content/">Example content</a>
+                </h1>
+
+                <span class="post-date">
+                    07 Feb 2012
+                </span>
+
+                
+
+<p>This blog post shows a few different types of content that&rsquo;s supported and styled with Hyde. Basic typography, images, and code are all supported.</p>
+
+<hr />
+
+<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+
+<blockquote>
+<p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+</blockquote>
+
+<p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+<h2 id="toc_0">Heading</h2>
+
+<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+<h3 id="toc_1">Sub-heading</h3>
+
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+<p>// Example can be run directly in your JavaScript console</p>
+
+<p>// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function(&ldquo;a&rdquo;, &ldquo;b&rdquo;, &ldquo;return a + b&rdquo;);</p>
+
+<p>// Call the function
+adder(2, 6);
+// &gt; 8</p>
+
+<p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+
+<h3 id="toc_2">Sub-heading</h3>
+
+<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+<ul>
+<li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+<li>Donec id elit non mi porta gravida at eget metus.</li>
+<li>Nulla vitae elit libero, a pharetra augue.</li>
+</ul>
+
+<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+
+<ol>
+<li>Vestibulum id ligula porta felis euismod semper.</li>
+<li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+<li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+</ol>
+
+<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+
+<hr />
+
+<p>Want to see something else added? <a href="https://github.com/ciarand/hyde-for-hugo/issues/new">Open an issue.</a></p>
+
+            </div>
+         
+    
+        
+        
+
+            
+            
+
+            <div class="post">
+                <h1 class="post-title">
+                    <a href="http://localhost:1313/2012/02/whats-hugo/">What&#39;s Hugo?</a>
+                </h1>
+
+                <span class="post-date">
+                    06 Feb 2012
+                </span>
+
+                <p><a href="http://hugo.spf13.com/">Hugo</a> is a static site generator. It&rsquo;s an open-source tool for creating
+simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/spf13/hugo#readme">the project&rsquo;s
+readme</a>:</p>
+
+<blockquote>
+<p>Hugo is a static site generator written in Go. It is optimized for speed, easy
+use and configurability. Hugo takes a directory with content and templates and
+renders them into a full html website.</p>
+</blockquote>
+
+<p>It&rsquo;s an immensely useful tool and one we encourage you to use here with Hyde.</p>
+
+<p>Find out more by <a href="https://github.com/spf13/hugo#readme">visiting the project on GitHub</a>.</p>
+
+            </div>
+         
+    
+        
+         
+    
+        
+         
+    
+        
+         
+    
+        
+         
+     
+</div>
+
+        </div>
+    </body>
+</html>

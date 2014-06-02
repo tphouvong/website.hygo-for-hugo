@@ -29,19 +29,17 @@
             {{ end }}
 
             {{/* Space savers */}}
-            {{ $url := .Site.Params.repo }}
+            {{ $url1 := .Site.Params.repo }}
             {{ $version := .Site.Params.version }}
+
             <li class="sidebar-nav-item">
-                <a href="{{ $url }}/archive/v{{ $version }}.zip">Download</a>
+                <a href="{{ $url1 }}">GitHub project</a>
             </li>
-            <li class="sidebar-nav-item">
-                <a href="{{ $url }}">GitHub project</a>
-            </li>
-            <li class="sidebar-nav-item">
-                Currently v{{ $version }}
-            </li>
+
         </ul>
 
-        <p>&copy; {{ .Site.LastChange.Format "2006" }}. All rights reserved.</p>
+        <p>&copy; 2012+ TP HOUVONG</p>
+        <p>Powered by <a href="http://hugo.spf13.com/">Hugo</a> and
+          <a href="http://hyde.getpoole.com/">Hyde</a></p>
     </div>
 </div>
