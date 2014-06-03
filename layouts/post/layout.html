@@ -3,3 +3,4 @@
     <span class="post-date">{{ .Date.Format "02 Jan 2006" }}</span>
     {{ .Content }}
 </div>
+{{ template "_disqus/disqus.html" . }}
