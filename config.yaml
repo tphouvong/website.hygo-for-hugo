@@ -18,4 +18,11 @@ params:
         Yet another blog about IT stuff from a junior network engineer.
     repo: "https://github.com/tphouvong"
     version: "0.0.2"
+
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-40161385-1'
+  getclicky :
+    site_id :
 ---
