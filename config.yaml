@@ -1,7 +1,7 @@
 ---
 contentdir: "content"
 layoutdir: "layouts"
-publishdir: "build"
+publishdir: "public"
 
 baseurl: "http://www.houvong.net"
 title: "Zbra! Hey!"
