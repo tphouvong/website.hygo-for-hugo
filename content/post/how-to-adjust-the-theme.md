@@ -1,6 +1,7 @@
 ---
 title: Differences between Hugo and Jekyll
 slug: differences-between-hugo-and-jekyll
+description: let's see how you can manage hyde for hugo!
 date: 2014-04-26
 type: post
 ---
