@@ -8,7 +8,6 @@ tags:
   - "blog"
   - "tips"
   - "web"
-hidden: yes
 ---
 
 Theming in [Hugo][] presents a unique set of challenges to both the experienced

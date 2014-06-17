@@ -1,7 +1,6 @@
 ---
 title: "Installer XBMC sur Ubuntu 12.10"
 description: "Un Media center maison"
-hidden: yes
 date: "2012-11-23"
 tags:
   - "linux"

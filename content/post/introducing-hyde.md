@@ -7,7 +7,6 @@ tags:
   - "blog"
   - "hugo"
   - "tips"
-hidden: yes
 ---
 
 Hyde is a brazen two-column [Hugo][hugo] theme, ported from its

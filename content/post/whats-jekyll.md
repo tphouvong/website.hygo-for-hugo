@@ -7,7 +7,6 @@ tags:
   - "blog"
   - "hugo"
   - "tips"
-hidden: yes
 ---
 
 [Hugo][hugo] is a static site generator. It's an open-source tool for creating
