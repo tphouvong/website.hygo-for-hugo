@@ -1,8 +1,9 @@
 ---
 title: Example content
-date: 2012-02-07
+date: "2012-02-07"
 slug: example-content
 type: post
+hidden: yes
 ---
 
 This blog post shows a few different types of content that's supported and styled with Hyde. Basic typography, images, and code are all supported.

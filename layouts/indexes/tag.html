@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr-fr">
+    <head>
+        {{ template "chrome/head.html" . }}
+    </head>
+
+    <body class="layout-reverse theme-base-08">
+        {{ template "chrome/sidebar.html" . }}
+        <div class="content container">
+                <h2 class="post-title">
+                    # Posts with tag <code>{{ .Title | lower }}</code></a> 
+                </h2>
+                
+                <ul class="list-unstyled">
+                    {{ range .Data.Pages }}
+                        {{ .Render "li" }}
+                    {{ end}}
+                </ul>
+        </div>
+    </body>
+</html>

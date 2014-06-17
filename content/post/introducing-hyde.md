@@ -1,8 +1,13 @@
 ---
 title: Introducing Hyde
-date: 2013-12-28
+date: "2013-12-28"
 slug: introducing-hyde
 type: post
+tags:
+  - "blog"
+  - "hugo"
+  - "tips"
+hidden: yes
 ---
 
 Hyde is a brazen two-column [Hugo][hugo] theme, ported from its

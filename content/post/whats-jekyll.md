@@ -1,8 +1,13 @@
 ---
 title: "What's Hugo?"
-date: 2012-02-06
+date: "2012-02-06"
 slug: whats-hugo
 type: post
+tags:
+  - "blog"
+  - "hugo"
+  - "tips"
+hidden: yes
 ---
 
 [Hugo][hugo] is a static site generator. It's an open-source tool for creating

@@ -3,7 +3,6 @@
 </div>
 <div class="posts">
     {{ $count := 0 }}
-
     {{/* for each piece of content */}}
     {{ range .Site.Recent }}
         {{/* if it's a post and we haven't already shown 10 yet */}}
@@ -31,15 +30,14 @@
                     </span>
                 </small>
                 </h3>
-                    <em>
-                        {{ .Description }}
-                    </em>
+                    <small>
+                        {{ .Summary }}
+                    </small>
                 </h3>
                 <br>
                 <a class="m-btn red-striped" href="{{ .Permalink }}">Read More
                     <span class="fa fa-angle-double-right"></span>
                 </a>
-
             </div>
         {{ end }} {{/* endif */}}
     {{ end }} {{/* endrange */}}
