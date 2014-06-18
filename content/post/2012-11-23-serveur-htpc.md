@@ -1,13 +1,8 @@
 ---
 title: "Installer XBMC sur Ubuntu 12.10"
-description: "Un Media center maison"
+description: "Un petit media center à la maison"
 date: "2012-11-23"
-tags:
-  - "linux"
-  - "xbmc"
-  - "htpc"
-  - "ubuntu"
-
+tags: ["linux","ubuntu","xbmc","htpc"]
 ---
 
 ## Xbox Media Center...
@@ -16,7 +11,9 @@ tags:
 
 ... plus connu sous le nom d'[XBMC](http://xbmc.org/), est un lecteur multimédia sous licence GNU GPL.
 Logiciel destiné initialement pour la console Xbox (la première), l'équipe de dév l'a porté sur les OS tels
-que Mac OS X, Windows, mais aussi Ubuntu. A noter que je n'utilise pas la fonction [PVR](http://fr.wikipedia.org/wiki/Personal_Video_Recorder)
+que Mac OS X, Windows, mais aussi Ubuntu.
+
+A noter que je n'utilise pas la fonction [PVR](http://fr.wikipedia.org/wiki/Personal_Video_Recorder)
 d'XBMC, puisque je n'ai pas de carte d'acquisition TV pour recevoir et enregistrer les chaines de TV directement
 sur mon HTPC.
 

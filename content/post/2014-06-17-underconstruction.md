@@ -1,8 +1,8 @@
 ---
 title: "En cours de construction"
-description: "un, deux, trois, test!"
+description: "Migration de wordpress vers hugo"
 date: "2014-06-17"
 tags: ["test", "blog"]
 ---
 
-En cours de construction
+Migration en cours
