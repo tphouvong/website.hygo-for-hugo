@@ -3,11 +3,7 @@
 <!-- Enable responsiveness on mobile devices-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <title>
-    {{ if eq .Title "Home" }}
-        {{ .Title }}{{ .Site.Params.tagline }}
-    {{ else }}
-        {{ .Title }} &middot; {{ .Site.Title }}
-    {{ end }}
+{{ .Site.Title }}
 </title>
 <!-- CSS -->
 <link rel="stylesheet" href="/css/poole.css">
