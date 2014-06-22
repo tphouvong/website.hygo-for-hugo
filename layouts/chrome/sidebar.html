@@ -8,11 +8,6 @@
             <li class="sidebar-nav-item{{ if eq .Url "/" }} active{{ end }}">
                 <a href="/">Home</a>
             </li>
-            {{/*
-                The code below dynamically generates a sidebar nav of pages
-                with a type of "page" that don't have the "hidden" param set to
-                true in the front-matter.
-            */}}
             {{ range .Site.Recent }}
                 {{/* if it's a page and it's not hidden */}}
                 {{ $isPage := (or (eq .Type "page") (eq .Type "index")) }}
@@ -23,8 +18,6 @@
                         </li>
                 {{ end }}
             {{ end }}
-
-            {{/* Space savers */}}
             {{ $url1 := .Site.Params.repo }}
             {{ $version := .Site.Params.version }}
         </ul>
