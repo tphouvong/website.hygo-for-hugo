@@ -4,13 +4,14 @@ type: "page"
 url: "/aboutme"
 ---
 
-Soon available <i class="fa fa-spin fa-spinner"></i> <i class="fa fa-smile-o"></i>
-
-
+Hi there! <i class="fa fa-smile-o"></i>
+Below you can see my Résumé/CV. Feel free to contact me if you have any question!
 
 <address>
-  <strong>Mr. Tien Peng HOUVONG</strong><br>
+  <strong>Mr. Tien Peng HOUVONG</strong>
+  <br/>
   <abbr title="Phone">tel:</abbr> +33 (0) 7 86 80 90 56
+  <br/>
   <a href="http://www.google.com/recaptcha/mailhide/d?k=01vibjYGWa7Rmjl8fjasgwug==&amp;c=GM_KRRL2qiXnXtto-sJErdoRkhFEx_na_SHDyvz1_mQ=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501vibjYGWa7Rmjl8fjasgwug\75\75\46c\75GM_KRRL2qiXnXtto-sJErdoRkhFEx_na_SHDyvz1_mQ\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">e-mail address</a>
 </address>
 
@@ -18,8 +19,8 @@ Soon available <i class="fa fa-spin fa-spinner"></i> <i class="fa fa-smile-o"></
     <div id="bootstrap">
 		<!-- Nav tabs -->
 		<ul class="nav nav-pills">
-		  <li><a href="#fr" data-toggle="tab" class="text-muted">Version française</a></li>
-		  <li><a href="#en" data-toggle="tab" class="text-muted">English version</a></li>
+		  <li><a href="#fr" data-toggle="tab">Version française</a></li>
+		  <li><a href="#en" data-toggle="tab">English version</a></li>
 		</ul>
 		<!-- Tab panes -->
 		<div class="tab-content">
