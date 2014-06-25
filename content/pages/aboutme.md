@@ -74,12 +74,77 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 				  </div>
 				</div>
 			  </div>
-			  <div class="tab-pane fade" id="competences">...Ca arrive</div>
+			  <div class="tab-pane fade" id="competences">
+			  	<br/>
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+					  <h4>
+					  	<b>Certifications Cisco - CSCO12184253</b>
+					  </h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    		<li>
+				    		Certifié Cisco CCNA Routing & Switching (640-802) - <em>Janvier 2013</em><img src="/img/logo/ccna_routerswitching_sm.jpg" alt="CCNA Routing and Switching" class="pull-right">
+				    		<img src="/img/logo/CCNA_security_sm.jpg" alt="CCNA Security" class="pull-right">
+				    		</li>
+				    		<li>
+				    		Certifié Cisco CCNA Security (640-554) - <em>Octobre 2013</em>
+				    		</li>
+				    		<em><b>Certification CCNP Route 642-902 en cours, attendu pour fin 2014</b></em>
+				    </small>
+				  </div>
+				  <div class="panel-heading">
+					  <h4>
+					  	<b>Réseaux</b>
+					  </h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<p>
+				    	test
+				    		<li>test1
+				    		</li>
+				    	</p>
+				    </small>
+				  </div>
+				  <div class="panel-heading">
+					  <h4>
+					  	<b>Télécommunications</b>
+					  </h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<p>
+				    	test
+				    		<li>test1
+				    		</li>
+				    	</p>
+				    </small>
+				  </div>
+				  <div class="panel-heading">
+					  <h4>
+					  	<b>Informatique</b>
+					  </h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<p>
+				    	test
+				    		<li>test1
+				    		</li>
+				    	</p>
+				    </small>
+				  </div>
+				</div>
+			  </div>
 			  <div class="tab-pane fade" id="XPpro">..soyez patient!..</div>
 			  <div class="tab-pane fade" id="interets">.oulalalallalalalal!!!..</div>
 			</div>
 		  </div>
 		  <div class="tab-pane fade active" id="en">
+		  English version soon available...
+		  <!--
 			<ul class="nav nav-tabs">
 			  <li><a href="#studies" data-toggle="tab" class="text-muted">Studies</a></li>
 			  <li><a href="#skills" data-toggle="tab" class="text-muted">Skills</a></li>
@@ -91,6 +156,7 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 			  <div class="tab-pane fade" id="skills">...Coming soon</div>
 			  <div class="tab-pane fade" id="proXP">..coming in a bit..</div>
 			  <div class="tab-pane fade" id="hobbies">.sooooonnn!!!..</div>
+			  -->
 			</div>
 		  </div>
 		</div>
