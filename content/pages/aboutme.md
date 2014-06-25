@@ -12,6 +12,8 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
   <br/>
   <abbr title="Phone">tel:</abbr> +33 (0) 7 86 80 90 56
   <br/>
+  Toulouse, France
+  <br/>
   <a href="http://www.google.com/recaptcha/mailhide/d?k=01vibjYGWa7Rmjl8fjasgwug==&amp;c=GM_KRRL2qiXnXtto-sJErdoRkhFEx_na_SHDyvz1_mQ=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501vibjYGWa7Rmjl8fjasgwug\75\75\46c\75GM_KRRL2qiXnXtto-sJErdoRkhFEx_na_SHDyvz1_mQ\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">e-mail address</a>
 </address>
 
