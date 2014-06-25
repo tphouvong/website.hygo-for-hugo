@@ -28,7 +28,8 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 			<ul class="nav nav-tabs">
 			  <li><a href="#formation" data-toggle="tab" class="text-muted">Formation</a></li>
 			  <li><a href="#competences" data-toggle="tab" class="text-muted">Compétences</a></li>
-			  <li><a href="#XPpro" data-toggle="tab" class="text-muted">Expériences Professionnelles</a></li>
+			  <li><a href="#XPpro" data-toggle="tab" class="text-muted">Expériences</a></li>
+			  <li><a href="#projets" data-toggle="tab" class="text-muted">Projets</a></li>
 			  <li><a href="#interets" data-toggle="tab" class="text-muted">Hobbies</a></li>
 			</ul>
 			<div class="tab-content">
@@ -84,6 +85,7 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 				  </div>
 				  <div class="panel-body">
 				  	<small>
+				  		<ul>
 				    		<li>
 				    		Certifié Cisco CCNA Routing & Switching (640-802) - <em>Janvier 2013</em><img src="/img/logo/ccna_routerswitching_sm.jpg" alt="CCNA Routing and Switching" class="pull-right">
 				    		<img src="/img/logo/CCNA_security_sm.jpg" alt="CCNA Security" class="pull-right">
@@ -92,20 +94,51 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 				    		Certifié Cisco CCNA Security (640-554) - <em>Octobre 2013</em>
 				    		</li>
 				    		<em><b>Certification CCNP Route 642-902 en cours, attendu pour fin 2014</b></em>
+				    	</ul>
 				    </small>
 				  </div>
 				  <div class="panel-heading">
 					  <h4>
-					  	<b>Réseaux</b>
+					  	<b>Protocoles Réseaux & Sécurité des Réseaux</b>
 					  </h4>
 				  </div>
 				  <div class="panel-body">
 				  	<small>
-				    	<p>
-				    	soon available
-				    		<li>*
+			    		<dl class="dl-horizontal">
+						  <dt>LAN:</dt>
+						  <dd>SNMP, VLAN (802.1Q), Q-in-Q (802.1AD), STP, VTP, HSRP, VRRP</dd>
+
+						  <dt>Routage IP:</dt>
+						  <dd>RIPv2, EIGRP, OSPF, BGP, MPLS, IPv6</dd>
+						  
+						  <dt>QoS:</dt>
+						  <dd>CoS (802.1Q), ToS (DiffServ - DSCP)</dd>
+						  
+						  <dt>Outils réseaux:</dt>
+						  <dd>Tcpdump, Wireshark, Nmap, Nessus<dd>
+						  
+						  <dt>Matériels réseaux:</dt>
+						  <dd>Commutateur Cisco 2940 & 3570, Routeur 2811 & ASR 1001, Parefeu Cisco ASA 5510</dd>
+
+						  <dt>Sécurité des réseaux</dt>
+						  <dd>PKI SSL, VPN SSL (OpenVPN), VPN IPsec, SSH, Cisco iOS ACL, Parefeu PfSense & Netfilter (IPTables),
+méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
+						</dl>
+				    </small>
+				  </div>
+				  <div class="panel-heading">
+					  <h4>
+					  	<b>Systèmes</b>
+					  </h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<ul>
+				    		<li>DNS, DHCP, SMB, NFS, FTP, OpenLDAP
 				    		</li>
-				    	</p>
+				    		<li>Administration des postes Linux (Debian, Ubuntu, Arch Linux)
+				    		</li>
+				    	</ul>
 				    </small>
 				  </div>
 				  <div class="panel-heading">
@@ -139,6 +172,7 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 				</div>
 			  </div>
 			  <div class="tab-pane fade" id="XPpro">soon available</div>
+			  <div class="tab-pane fade" id="projets">soon available</div>
 			  <div class="tab-pane fade" id="interets">soon available</div>
 			</div>
 		  </div>
@@ -148,13 +182,15 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 			<ul class="nav nav-tabs">
 			  <li><a href="#studies" data-toggle="tab" class="text-muted">Studies</a></li>
 			  <li><a href="#skills" data-toggle="tab" class="text-muted">Skills</a></li>
-			  <li><a href="#proXP" data-toggle="tab" class="text-muted">Professional experiences</a></li>
+			  <li><a href="#proXP" data-toggle="tab" class="text-muted">Work experiences</a></li>
+			  <li><a href="#project" data-toggle="tab" class="text-muted">Project</a></li>
 			  <li><a href="#hobbies" data-toggle="tab" class="text-muted">Hobbies</a></li>
 			</ul>
 			<div class="tab-content">
 			  <div class="tab-pane fade active" id="studies">...Available soon</div>
 			  <div class="tab-pane fade" id="skills">...Coming soon</div>
 			  <div class="tab-pane fade" id="proXP">..coming in a bit..</div>
+			  <div class="tab-pane fade" id="project">..coming in a bit..</div>
 			  <div class="tab-pane fade" id="hobbies">.sooooonnn!!!..</div>
 			  -->
 			</div>
