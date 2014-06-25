@@ -102,8 +102,8 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    	test
-				    		<li>test1
+				    	soon available
+				    		<li>*
 				    		</li>
 				    	</p>
 				    </small>
@@ -116,8 +116,8 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    	test
-				    		<li>test1
+				    	soon available
+				    		<li>*
 				    		</li>
 				    	</p>
 				    </small>
@@ -130,16 +130,16 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    	test
-				    		<li>test1
+				    	soon available
+				    		<li>*
 				    		</li>
 				    	</p>
 				    </small>
 				  </div>
 				</div>
 			  </div>
-			  <div class="tab-pane fade" id="XPpro">..soyez patient!..</div>
-			  <div class="tab-pane fade" id="interets">.oulalalallalalalal!!!..</div>
+			  <div class="tab-pane fade" id="XPpro">soon available</div>
+			  <div class="tab-pane fade" id="interets">soon available</div>
 			</div>
 		  </div>
 		  <div class="tab-pane fade active" id="en">
