@@ -87,8 +87,9 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 				  	<small>
 				  		<ul>
 				    		<li>
-				    		Certifié Cisco CCNA Routing & Switching (640-802) - <em>Janvier 2013</em><img src="/img/logo/ccna_routerswitching_sm.jpg" alt="CCNA Routing and Switching" class="pull-right">
-				    		<img src="/img/logo/CCNA_security_sm.jpg" alt="CCNA Security" class="pull-right">
+				    		Certifié Cisco CCNA Routing & Switching (640-802) - <em>Janvier 2013</em>
+					    		<img src="/img/logo/CCNA_security_sm.jpg" alt="CCNA Security" class="pull-right">
+					    		<img src="/img/logo/ccna_routerswitching_sm.jpg" alt="CCNA Routing and Switching" class="pull-right">
 				    		</li>
 				    		<li>
 				    		Certifié Cisco CCNA Security (640-554) - <em>Octobre 2013</em>
@@ -120,25 +121,29 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 						  <dt>Matériels réseaux:</dt>
 						  <dd>Commutateur Cisco 2940 & 3570, Routeur 2811 & ASR 1001, Parefeu Cisco ASA 5510</dd>
 
-						  <dt>Sécurité des réseaux</dt>
-						  <dd>PKI SSL, VPN SSL (OpenVPN), VPN IPsec, SSH, Cisco iOS ACL, Parefeu PfSense & Netfilter (IPTables),
+						  <dt>Sécurité des rsx:</dt>
+						  <dd>PKI SSL, VPN SSL (OpenVPN), VPN IPsec, SSH, Cisco iOS ACL, Parefeu PfSense & Netfilter (IPTables), NAT
 méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
 						</dl>
 				    </small>
 				  </div>
 				  <div class="panel-heading">
 					  <h4>
-					  	<b>Systèmes</b>
+					  	<b>Administration des Systèmes</b>
 					  </h4>
 				  </div>
 				  <div class="panel-body">
 				  	<small>
-				    	<ul>
-				    		<li>DNS, DHCP, SMB, NFS, FTP, OpenLDAP
-				    		</li>
-				    		<li>Administration des postes Linux (Debian, Ubuntu, Arch Linux)
-				    		</li>
-				    	</ul>
+				  		<dl class="dl-horizontal">
+							<dt>Services:</dt>
+				    		<dd>DNS, DHCP, SMB, NFS, FTP, OpenLDAP, Apache, Nginx</dd>
+
+				    		<dt>OS:</dt>
+				    		<dd>Linux (Ubuntu, Debian, Arch Linux), Windows (XP, 7, 8)</dd>
+
+				    		<dt>Virtualisation:</dt>
+				    		<dd>VirtualBox, Docker</dd>
+				  		</dl>
 				    </small>
 				  </div>
 				  <div class="panel-heading">
@@ -148,25 +153,38 @@ méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
 				  </div>
 				  <div class="panel-body">
 				  	<small>
-				    	<p>
-				    	soon available
-				    		<li>*
-				    		</li>
-				    	</p>
+				  		<dl class="dl-horizontal">
+							<dt>Réseaux fixes:</dt>
+				    		<dd>ADSL, ADSL 2+, VDSL, Fibre optique</dd>
+
+				    		<dt>Réseaux sans fil:</dt>
+				    		<dd>Bluetooth, 802.11a/b/c/g/n</dd>
+
+				    		<dt>Réseaux mobiles:</dt>
+				    		<dd>GSM, GPRS, EDGE, UMTS, HSPA, LTE</dd>
+
+				    		<dt>Antennes:</dt>
+				    		<dd>Conception de dipôle, patch, réseaux d'antennes, beamforming, MiMo</dd>
+				  		</dl>  		
 				    </small>
 				  </div>
 				  <div class="panel-heading">
 					  <h4>
-					  	<b>Informatique</b>
+					  	<b>Langages</b>
 					  </h4>
 				  </div>
 				  <div class="panel-body">
 				  	<small>
-				    	<p>
-				    	soon available
-				    		<li>*
-				    		</li>
-				    	</p>
+				  		<dl class="dl-horizontal">
+							<dt>Programmation:</dt>
+				    		<dd>VHDL, C, Java, Python, Script Shell</dd>
+
+				    		<dt>Modélisation:</dt>
+				    		<dd>UML, AADL, MERISE</dd>
+
+				    		<dt>Web et BDD:</dt>
+				    		<dd>HTML5/CSS, JavaScript, UML 2.0, Web Services SOAP/WSDL, XML, MySQL, PostgreSQL</dd>
+				  		</dl>
 				    </small>
 				  </div>
 				</div>
