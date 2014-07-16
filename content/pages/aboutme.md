@@ -5,7 +5,7 @@ url: "/aboutme"
 ---
 
 Hi there! <i class="fa fa-smile-o"></i>
-Below you can see my Résumé/CV. Feel free to contact me if you have any question!
+Below you can see my Résumé/CV. Feel free to contact me if you have any questions!
 
 <address>
   <strong>Mr. Tien Peng HOUVONG</strong>
@@ -23,6 +23,7 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 		<ul class="nav nav-pills">
 		  <li><a href="#fr" data-toggle="tab">Version française</a></li>
 		  <li><a href="#en" data-toggle="tab">English version</a></li>
+		  <li><a href="#cv" data-toggle="tab">CV - PDF</a></li>		
 		</ul>
 		<!-- Tab panes -->
 		<div class="tab-content">
@@ -191,13 +192,71 @@ méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
 				  </div>
 				</div>
 			  </div>
-			  <div class="tab-pane fade" id="XPpro">soon available</div>
+			  <div class="tab-pane fade" id="XPpro">
+			   <br/>
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+					  <h4><b>Ingénieur Sécurité & Système</b> - <em>Sogeti France - Business Unit European Security Expertise Center</em>
+					  <a href="http://gei.insa-toulouse.fr/fr/formation_initiale.html" target="_blank"><img src="/img/logo/XP/sogeti.png" alt="INSA de Toulouse" class="pull-right"></a>
+					  <small><p>Depuis Nov. 2013, Toulouse - France</p></small></h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<p>
+							O
+				    	</p>
+				    </small>
+				  </div>
+				  <div class="panel-heading">
+					  <h4><b>DEUG Sciences et Technologies, Sciences Pour l’Ingénieur</b> - <em>Université Paul Cézanne</em>
+					  <a href="http://formations.univ-amu.fr/ME3SPI.html" target="_blank"><img src="/img/logo/logo-u3.jpg" alt="Université Paul Cézanne" class="pull-right"></a>
+					  <small><p>2009-2010, Marseille - France</p></small></h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<p>
+				    	A
+				    	</p>
+				    </small>
+				  </div>
+				  <div class="panel-heading">
+					  <h4><b>Classe Préparatoire (L1-L2) au <a href="http://ccp.scei-concours.fr/sccp.php?page=deug/accueil_deug.html">Concours CCP DEUG</a></b> - <em>Université Pierre et Marie Curie</em>
+					  <a href="http://www.licence.math.upmc.fr/L2/preparation_ecoles_d_ingenieurs.php" target="_blank"><img src="/img/logo/logo-upmc.jpg" alt="Université Pierre et Marie Curie" class="pull-right"></a>
+					  <small><p>2007-2009, Paris - France</p></small></h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<p>
+				    	P
+				    	</p>
+				    </small>
+				  </div>
+				</div>
+			  </div>
 			  <div class="tab-pane fade" id="projets">soon available</div>
 			  <div class="tab-pane fade" id="interets">soon available</div>
 			</div>
 		  </div>
 		  <div class="tab-pane fade active" id="en">
 		  English version soon available...
+		  <!--
+			<ul class="nav nav-tabs">
+			  <li><a href="#studies" data-toggle="tab" class="text-muted">Studies</a></li>
+			  <li><a href="#skills" data-toggle="tab" class="text-muted">Skills</a></li>
+			  <li><a href="#proXP" data-toggle="tab" class="text-muted">Work experiences</a></li>
+			  <li><a href="#project" data-toggle="tab" class="text-muted">Project</a></li>
+			  <li><a href="#hobbies" data-toggle="tab" class="text-muted">Hobbies</a></li>
+			</ul>
+			<div class="tab-content">
+			  <div class="tab-pane fade active" id="studies">...Available soon</div>
+			  <div class="tab-pane fade" id="skills">...Coming soon</div>
+			  <div class="tab-pane fade" id="proXP">..coming in a bit..</div>
+			  <div class="tab-pane fade" id="project">..coming in a bit..</div>
+			  <div class="tab-pane fade" id="hobbies">.sooooonnn!!!..</div>
+			  -->
+			</div>
+		  <div class="tab-pane fade active" id="cv">
+		  CV download soon available...
 		  <!--
 			<ul class="nav nav-tabs">
 			  <li><a href="#studies" data-toggle="tab" class="text-muted">Studies</a></li>
