@@ -101,6 +101,20 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 				    	</ul>
 				    </small>
 				  </div>
+				   <div class="panel-heading">
+					  <h4>
+					  	<b>Certifications Stormshield Data Security (anciennement Security Box Suite)</b>
+					  </h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				  		<ul>
+				    		<li>
+				    		Certifié Security Box Administrator - <em>Juillet 2014</em>
+				    		</li>
+				    	</ul>
+				    </small>
+				  </div>
 				  <div class="panel-heading">
 					  <h4>
 					  	<b>Protocoles Réseaux & Sécurité des Réseaux</b>
@@ -203,7 +217,23 @@ méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-							...
+							<em><u>Mission pour un grand groupe issu du secteur de l’aéronautique spatial, civil et militaire</u></em>
+							<br/><br/>
+
+							- Administration des consoles de gestion ePolicy Orchestrator et Security BOX Authority Manager (exploitation et suivi du parc)<br/>
+							- Participation aux gestions de crises et traitement des attaques virales<br/>
+							- Participation à l’élaboration et au maintien d’outils de sécurité (Python, VBScript), rédaction de
+							documentations techniques<br/>
+							- Participation aux migrations des produits (vérification des spécifications, test de validation, suivi des
+							phases pilotes, suivi durant le déploiement, traitement des reliquats)<br/>
+							- Respect des SLA incidents<br/>
+							- Maintien en condition opérationnelle et support L2 des postes de travail (> 100 000 postes utilisateurs) :
+							<ul>
+							<li>Identification et réparation des postes en anomalie (Windows XP, 7, 8)</li>
+							<li>Suivi de la conformité des produits McAfee du parc (Agent ePO, VirusScan Enterprise, HIPS
+							Firewall)</li>
+							<li>Résolution des incidents</li>
+							</ul>
 				    	</p>
 				    </small>
 				  </div>
@@ -215,7 +245,22 @@ méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    		...
+							<em><u>Participation à un projet d'intégration de solutions réseaux WAN</u></em>
+							<br/><br/>
+
+							- Test d’une architecture réseau avant mise en production pour un projet WAN de plus de 60 sites<br/>
+							- Mise en place de : QoS, encapsulation 802.1q et 802.1ad, VRFs, BGP entre sites distants et backbone<br/>
+							- Génération de fichiers de configuration en masse pour les matériels réseaux (OneAccess, Cisco, script
+Python)<br/>
+							- Rédaction de documents internes et à destination du client (procédures, dossiers de spécifications)<br/>
+							- Déploiement sur sites, contact avec le client<br/><br/>
+							
+							<em><u>Conception et développement d’une solution web de gestion de projets et de commandes</u></em>
+							<br/><br/>
+
+							- Expression et analyse des besoins avec les futurs utilisateurs<br/>
+							- Conception et modélisation d’une base de données suivant la méthode MERISE, SGBDR PostgreSQL<br/>
+							- Conception et développement de l’interface utilisateur en HTML5 avec le Framework Django<br/>
 				    	</p>
 				    </small>
 				  </div>
