@@ -197,37 +197,72 @@ méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
 				<div class="panel panel-default">
 				  <div class="panel-heading">
 					  <h4><b>Ingénieur Sécurité & Système</b> - <em>Sogeti France - Business Unit European Security Expertise Center</em>
-					  <a href="http://gei.insa-toulouse.fr/fr/formation_initiale.html" target="_blank"><img src="/img/logo/XP/sogeti.png" alt="INSA de Toulouse" class="pull-right"></a>
+					  <a href="http://www.fr.sogeti.com" target="_blank"><img src="/img/logo/XP/sogeti.png" alt="Sogeti" class="pull-right"></a>
 					  <small><p>Depuis Nov. 2013, Toulouse - France</p></small></h4>
 				  </div>
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-							O
+							...
 				    	</p>
 				    </small>
 				  </div>
 				  <div class="panel-heading">
-					  <h4><b>DEUG Sciences et Technologies, Sciences Pour l’Ingénieur</b> - <em>Université Paul Cézanne</em>
-					  <a href="http://formations.univ-amu.fr/ME3SPI.html" target="_blank"><img src="/img/logo/logo-u3.jpg" alt="Université Paul Cézanne" class="pull-right"></a>
-					  <small><p>2009-2010, Marseille - France</p></small></h4>
+					  <h4><b>Stage - Ingénieur Réseaux</b> - <em>Orange Business Services - Network Integration Services (Obiane)</em>
+					  <a href="http://www.filiales-emploi.fr.orange-business.com/921-obiane.htm" target="_blank"><img src="/img/logo/XP/obs.png" alt="Orange Business Service" class="pull-right"></a>
+					  <small><p>Février-Juillet 2013, Toulouse - France</p></small></h4>
 				  </div>
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    	A
+				    		...
 				    	</p>
 				    </small>
 				  </div>
 				  <div class="panel-heading">
-					  <h4><b>Classe Préparatoire (L1-L2) au <a href="http://ccp.scei-concours.fr/sccp.php?page=deug/accueil_deug.html">Concours CCP DEUG</a></b> - <em>Université Pierre et Marie Curie</em>
-					  <a href="http://www.licence.math.upmc.fr/L2/preparation_ecoles_d_ingenieurs.php" target="_blank"><img src="/img/logo/logo-upmc.jpg" alt="Université Pierre et Marie Curie" class="pull-right"></a>
-					  <small><p>2007-2009, Paris - France</p></small></h4>
+					  <h4><b>Stage - Ingénieur Wifi & Administrateur Réseaux</b> - <em>Vega France</em>
+					  <a href="http://www.vegafrance.fr" target="_blank"><img src="/img/logo/XP/vega.jpg" alt="Vega France" class="pull-right"></a>
+					  <small><p>Juillet-Sept. 2012, Toulouse - France</p></small></h4>
 				  </div>
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    	P
+				    	...
+				    	</p>
+				    </small>
+				  </div>
+				  <div class="panel-heading">
+					  <h4><b>Opérateur</b> - <em>Freescale Semiconducteurs France SAS</em>
+					  <a href="http://www.vegafrance.fr" target="_blank"><img src="/img/logo/XP/freescale.jpg" alt="Vega France" class="pull-right"></a>
+					  <small><p>Juin-Août 2011, Toulouse - France</p></small></h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<p>
+				    	...
+				    	</p>
+				    </small>
+				  </div>
+				  <div class="panel-heading">
+					  <h4><b>Valet de chambre</b> - <em>Hôtel Ibis</em>
+					  <a href="http://www.ibis.com" target="_blank"><img src="/img/logo/XP/ibis.png" alt="Ibis hotels" class="pull-right"></a>
+					  <small><p>Juin-Août 2010, Toulouse - France</p></small></h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<p>
+				    	...
+				    	</p>
+				    </small>
+				  </div>
+				  <div class="panel-heading">
+					  <h4><b>Serveur</b> - <em>Le Bonheur de Sannois</em>
+					  <small><p>Eté 2007-2008-2009, Sannois - France</p></small></h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				    	<p>
+				    	...
 				    	</p>
 				    </small>
 				  </div>
