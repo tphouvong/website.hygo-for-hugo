@@ -355,6 +355,7 @@ Python et Bash)<br/>
 			  </div>
 			  <div class="tab-pane fade" id="projets">
 			  <br/>
+			  <h3>.. En cours de mise à jour .. </h3><br/>
 			  Pour les projets cités ci-dessous, la plupart des ressources seront disponibles prochainement
 			  	<div class="panel panel-default">
 				  	<div class="panel-heading">
@@ -385,49 +386,27 @@ Python et Bash)<br/>
 						    		<dd>
 						    		<b>Bureau d'étude QoS - <em>2013</em></b>
 						    		<br/>
-						    		Le projet consistait en la planification d'un réseau cellulaire de type W-CDMA (UMTS). En trinôme, le design se faisait grâce à l'outil de planification réseau ICS Telecom. Le modèle de propagation ITU-R P.525 était utilisé pour déterminer l'<em>affaiblissement d'espace libre</em> ou <em>free-space path loss </em><a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CCsQFjAB&url=https%3A%2F%2Fwww.itu.int%2Fdms_pubrec%2Fitu-r%2Frec%2Fp%2FR-REC-P.525-2-199408-I!!PDF-E.pdf&ei=aRbJU6StKMPksASlg4CwBA&usg=AFQjCNHPoFzlWmkl9yaSlq8GJzFORioY_A&sig2=GxabrlkhS8bNRQj5NIUmCQ&bvm=bv.71198958,d.cWc&cad=rja" target="_blank">[1]</a> <a href="http://en.wikipedia.org/wiki/Free-space_path_loss" target="_blank">[2]</a>, permettant ainsi de terminer la distance entre un transmetteur et un récepteur radio de manière théorique. Ainsi, on pouvait approximer le positionnement des stations de bases, et donc des cellules.
+						    		Mise en place d’une solution de gestion statique et dynamique de la QoS dans un
+									réseau de cœur et de sites. En équipe de 7 personnes<br/>
+									Configuration sur routeurs Cisco 1841, routeur Linux (Zebra/Quagga), softphone Jitsi<br/>
+									<em><u>Mots clés :</u></em>MPLS VPN de niveau 2 et 3, QoS, DiffServ, SLA, ACL, IPtables, OpenJSIP
 						    		</dd>
 						    		<dd>
-						    		<b>Design d'antennes - <em>2012</em></b>
+						    		<b>Bureau d’étude Sécurisation Réseau - <em>2013</em></b>
 						    		<br/>
-
-						    		Conception d'antennes et de réseaux d'antennes à partir d'un logiciel de conception	assistée (CAD) AMF - EMS et 
-						    		MatLab. En équipe de 3 personnes.<br/>
-						    		Le design d'antennes (patch et réseaux d'antennes) se basait sur le calcul du bilan de liaison. Ce dernier prend en compte tous les gains/pertes pour une liaison radio entre un émetteur et un récepteur.<br/>
-						    		<em><u>Notions utilisées:</u> adaptation d'impédances, ligne de transmission, antenne dipôle demi-onde, réseaux d'antennes et BeamForming Network, rayonnement "broadside" et "end-fire"</em> <a href="/ressources/cours_antennes.pdf" target="_blank">[3]</a> <a href="/ressources/antennas.pdf" target="_blank">[4]</a>
+						    		Mise en place d’une architecture réseau sécurisée par une
+									appliance Cisco ASA 5510. En équipe de 3 personnes<br/>
+									<em><u>Mots clés :</u></em>Firewall, NAT, ACL, VPN IPSec, DMZ, IDS, Méthode EBIOS
 						    		</dd>
 
-					    		<dt>Espagnol & Italien</dt>
+					    		<dt>Informatique</dt>
 						    		<dd>
-						    		<b>Dimensionnement d'un réseau mobile 3G - <em>2012</em></b>
+						    		<b>Application mobile Android - <em>2012</em></b>
 						    		<br/>
-						    		Le projet consistait en la planification d'un réseau cellulaire de type W-CDMA (UMTS). En trinôme, le design se faisait grâce à l'outil de planification réseau ICS Telecom. Le modèle de propagation ITU-R P.525 était utilisé pour déterminer l'<em>affaiblissement d'espace libre</em> ou <em>free-space path loss </em><a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CCsQFjAB&url=https%3A%2F%2Fwww.itu.int%2Fdms_pubrec%2Fitu-r%2Frec%2Fp%2FR-REC-P.525-2-199408-I!!PDF-E.pdf&ei=aRbJU6StKMPksASlg4CwBA&usg=AFQjCNHPoFzlWmkl9yaSlq8GJzFORioY_A&sig2=GxabrlkhS8bNRQj5NIUmCQ&bvm=bv.71198958,d.cWc&cad=rja" target="_blank">[1]</a> <a href="http://en.wikipedia.org/wiki/Free-space_path_loss" target="_blank">[2]</a>, permettant ainsi de terminer la distance entre un transmetteur et un récepteur radio de manière théorique. Ainsi, on pouvait approximer le positionnement des stations de bases, et donc des cellules.
-						    		</dd>
-						    		<dd>
-						    		<b>Design d'antennes - <em>2012</em></b>
-						    		<br/>
-
-						    		Conception d'antennes et de réseaux d'antennes à partir d'un logiciel de conception	assistée (CAD) AMF - EMS et 
-						    		MatLab. En équipe de 3 personnes.<br/>
-						    		Le design d'antennes (patch et réseaux d'antennes) se basait sur le calcul du bilan de liaison. Ce dernier prend en compte tous les gains/pertes pour une liaison radio entre un émetteur et un récepteur.<br/>
-						    		<em><u>Notions utilisées:</u> adaptation d'impédances, ligne de transmission, antenne dipôle demi-onde, réseaux d'antennes et BeamForming Network, rayonnement "broadside" et "end-fire"</em> <a href="/ressources/cours_antennes.pdf" target="_blank">[3]</a> <a href="/ressources/antennas.pdf" target="_blank">[4]</a>
-						    		</dd>
-
-					    		<dt>Chinois Mandarin</dt>
-						    		<dd>
-						    		<b>Dimensionnement d'un réseau mobile 3G - <em>2012</em></b>
-						    		<br/>
-						    		Le projet consistait en la planification d'un réseau cellulaire de type W-CDMA (UMTS). En trinôme, le design se faisait grâce à l'outil de planification réseau ICS Telecom. Le modèle de propagation ITU-R P.525 était utilisé pour déterminer l'<em>affaiblissement d'espace libre</em> ou <em>free-space path loss </em><a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CCsQFjAB&url=https%3A%2F%2Fwww.itu.int%2Fdms_pubrec%2Fitu-r%2Frec%2Fp%2FR-REC-P.525-2-199408-I!!PDF-E.pdf&ei=aRbJU6StKMPksASlg4CwBA&usg=AFQjCNHPoFzlWmkl9yaSlq8GJzFORioY_A&sig2=GxabrlkhS8bNRQj5NIUmCQ&bvm=bv.71198958,d.cWc&cad=rja" target="_blank">[1]</a> <a href="http://en.wikipedia.org/wiki/Free-space_path_loss" target="_blank">[2]</a>, permettant ainsi de terminer la distance entre un transmetteur et un récepteur radio de manière théorique. Ainsi, on pouvait approximer le positionnement des stations de bases, et donc des cellules.
+						    		Conception et développement d'une application sur terminal Android relatif à l'INSA de Toulouse. En équipe de 4 personnes<br/>
+									<em><u>Mots clés :</u></em>SDK Android 2.3, Java Dalvik, Cycle en V
 						    		</dd>
 						    		<dd>
-						    		<b>Design d'antennes - <em>2012</em></b>
-						    		<br/>
-
-						    		Conception d'antennes et de réseaux d'antennes à partir d'un logiciel de conception	assistée (CAD) AMF - EMS et 
-						    		MatLab. En équipe de 3 personnes.<br/>
-						    		Le design d'antennes (patch et réseaux d'antennes) se basait sur le calcul du bilan de liaison. Ce dernier prend en compte tous les gains/pertes pour une liaison radio entre un émetteur et un récepteur.<br/>
-						    		<em><u>Notions utilisées:</u> adaptation d'impédances, ligne de transmission, antenne dipôle demi-onde, réseaux d'antennes et BeamForming Network, rayonnement "broadside" et "end-fire"</em> <a href="/ressources/cours_antennes.pdf" target="_blank">[3]</a> <a href="/ressources/antennas.pdf" target="_blank">[4]</a>
-						    		</dd>
 					  		</dl>
 					    </small>
 					  </div>
