@@ -204,6 +204,28 @@ méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
 				  		</dl>
 				    </small>
 				  </div>
+				  <div class="panel-heading">
+					  <h4>
+					  	<b>Langues</b>
+					  </h4>
+				  </div>
+				  <div class="panel-body">
+				  	<small>
+				  		<dl class="dl-horizontal">
+							<dt>Francais:</dt>
+				    		<dd>Langue maternelle</dd>
+
+				    		<dt>Anglais:</dt>
+				    		<dd>Lu, écrit, oral intermédiaire - Score Toeic : 920/990 <em>(Novembre 2012)</em></dd>
+
+				    		<dt>Espagnol & Italien</dt>
+				    		<dd>Niveau scolaire</dd>
+
+				    		<dt>Chinois Mandarin</dt>
+				    		<dd>Notions</dd>
+				  		</dl>
+				    </small>
+				  </div>
 				</div>
 			  </div>
 			  <div class="tab-pane fade" id="XPpro">
@@ -218,7 +240,7 @@ méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
 				  	<small>
 				    	<p>
 							<em><u>Mission pour un grand groupe issu du secteur de l’aéronautique spatial, civil et militaire</u></em>
-							<br/><br/>
+							<br/>
 
 							- Administration des consoles de gestion ePolicy Orchestrator et Security BOX Authority Manager (exploitation et suivi du parc)<br/>
 							- Participation aux gestions de crises et traitement des attaques virales<br/>
@@ -246,17 +268,17 @@ méthode EBIOS, sensibilisation à la veille sécurité & réseaux</dd>
 				  	<small>
 				    	<p>
 							<em><u>Participation à un projet d'intégration de solutions réseaux WAN</u></em>
-							<br/><br/>
+							<br/>
 
 							- Test d’une architecture réseau avant mise en production pour un projet WAN de plus de 60 sites<br/>
-							- Mise en place de : QoS, encapsulation 802.1q et 802.1ad, VRFs, BGP entre sites distants et backbone<br/>
+							- Mise en place de : QoS (bande passante minimum, VoIP), redondance LAN (HSRP, VRRP), agrégation de liens LACP, encapsulation 802.1q et 802.1ad, VRFs, routage BGP entre sites distants et backbone<br/>
 							- Génération de fichiers de configuration en masse pour les matériels réseaux (OneAccess, Cisco, script
-Python)<br/>
+Python et Bash)<br/>
 							- Rédaction de documents internes et à destination du client (procédures, dossiers de spécifications)<br/>
-							- Déploiement sur sites, contact avec le client<br/><br/>
+							- Déploiement sur sites (3 sites clients dont 1 pilotes, contact avec le client<br/><br/>
 							
 							<em><u>Conception et développement d’une solution web de gestion de projets et de commandes</u></em>
-							<br/><br/>
+							<br/>
 
 							- Expression et analyse des besoins avec les futurs utilisateurs<br/>
 							- Conception et modélisation d’une base de données suivant la méthode MERISE, SGBDR PostgreSQL<br/>
@@ -272,7 +294,22 @@ Python)<br/>
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    	...
+			    			<em><u>Etude du réseau local de l’entreprise :</u></em>
+							<br/>
+							- Etat de l'art du réseau local et recueil des besoins utilisateurs<br/>
+							- Analyse de ports sur la passerelle et les postes de travail avec les outils Nmap et Nessus<br/>
+							- Mise en place d'une redondance de commutation (protocole STP) et d'agrégation de liens (LACP)<br/>
+							- Séparation entre les flux utilisateurs et les flux médias (VLAN)
+							- Mise en place d’outils Open Source :
+								<ul>
+								<li>Supervision du trafic du réseau avec MRTG et NTop</li>
+								<li>Annuaire OpenLDAP pour l'authentification des postes sous Debian (Linux)</li>
+								</ul>
+
+							<em><u>Etude d’une infrastructure de communication sans fil pour une chaîne d’hypermarchés Leclerc :</u></em>
+							<br/>
+							- Bilan de liaison sur le protocole 802.11n et MiMo<br/>
+							- Mise en place de la solution<br/>
 				    	</p>
 				    </small>
 				  </div>
@@ -284,19 +321,21 @@ Python)<br/>
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    	...
+					    	<em><u>Travail en salle blanche de classe 10</u></em>
+					    	<br/>
+					    	Conduite de plusieurs opérations de productions, intégration des priorités de production dans le choix des produits, contrôle du déroulement du procédé<br/>
 				    	</p>
 				    </small>
 				  </div>
 				  <div class="panel-heading">
 					  <h4><b>Valet de chambre</b> - <em>Hôtel Ibis</em>
 					  <a href="http://www.ibis.com" target="_blank"><img src="/img/logo/XP/ibis.png" alt="Ibis hotels" class="pull-right"></a>
-					  <small><p>Juin-Août 2010, Toulouse - France</p></small></h4>
+					  <small><p>Janvier 2010, Toulouse - France</p></small></h4>
 				  </div>
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    	...
+					    	Entretien des chambres de l’hôtel, recueil des attentes des clients, souci de son confort<br/>
 				    	</p>
 				    </small>
 				  </div>
@@ -307,13 +346,93 @@ Python)<br/>
 				  <div class="panel-body">
 				  	<small>
 				    	<p>
-				    	...
+				    		Accueil et service de la clientèle<br/>
+					    	Gestion des commandes et de caisse<br/>
 				    	</p>
 				    </small>
 				  </div>
 				</div>
 			  </div>
-			  <div class="tab-pane fade" id="projets">soon available</div>
+			  <div class="tab-pane fade" id="projets">
+			  <br/>
+			  Pour les projets cités ci-dessous, la plupart des ressources seront disponibles prochainement
+			  	<div class="panel panel-default">
+				  	<div class="panel-heading">
+						  <h4>
+						  	<b>Projets effectués en cycle ingénieur</b>
+						  </h4>
+					  </div>
+					  <div class="panel-body">
+					  	<small>
+					  		<dl class="dl-horizontal">
+								<dt>Telecommunications:</dt>
+						    		<dd>
+						    		<b>Dimensionnement d'un réseau mobile 3G - <em>2012</em></b>
+						    		<br/>
+						    		Le projet consistait en la planification d'un réseau cellulaire de type W-CDMA (UMTS). En trinôme, le design se faisait grâce à l'outil de planification réseau ICS Telecom. Le modèle de propagation ITU-R P.525 était utilisé pour déterminer l'<em>affaiblissement d'espace libre</em> ou <em>free-space path loss </em><a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CCsQFjAB&url=https%3A%2F%2Fwww.itu.int%2Fdms_pubrec%2Fitu-r%2Frec%2Fp%2FR-REC-P.525-2-199408-I!!PDF-E.pdf&ei=aRbJU6StKMPksASlg4CwBA&usg=AFQjCNHPoFzlWmkl9yaSlq8GJzFORioY_A&sig2=GxabrlkhS8bNRQj5NIUmCQ&bvm=bv.71198958,d.cWc&cad=rja" target="_blank">[1]</a> <a href="http://en.wikipedia.org/wiki/Free-space_path_loss" target="_blank">[2]</a>, permettant ainsi de terminer la distance entre un transmetteur et un récepteur radio de manière théorique. Ainsi, on pouvait approximer le positionnement des stations de bases, et donc des cellules.
+						    		</dd>
+						    		<dd>
+						    		<b>Design d'antennes - <em>2012</em></b>
+						    		<br/>
+
+						    		Conception d'antennes et de réseaux d'antennes à partir d'un logiciel de conception	assistée (CAD) AMF - EMS et 
+						    		MatLab. En équipe de 3 personnes.<br/>
+						    		Le design d'antennes (patch et réseaux d'antennes) se basait sur le calcul du bilan de liaison. Ce dernier prend en compte tous les gains/pertes pour une liaison radio entre un émetteur et un récepteur.<br/>
+						    		<em><u>Notions utilisées:</u> adaptation d'impédances, ligne de transmission, antenne dipôle demi-onde, réseaux d'antennes et BeamForming Network, rayonnement "broadside" et "end-fire"</em> <a href="/ressources/cours_antennes.pdf" target="_blank">[3]</a> <a href="/ressources/antennas.pdf" target="_blank">[4]</a>
+						    		</dd>
+
+					    		<dt>Réseaux:</dt>
+						    		<dd>
+						    		<b>Bureau d'étude QoS - <em>2013</em></b>
+						    		<br/>
+						    		Le projet consistait en la planification d'un réseau cellulaire de type W-CDMA (UMTS). En trinôme, le design se faisait grâce à l'outil de planification réseau ICS Telecom. Le modèle de propagation ITU-R P.525 était utilisé pour déterminer l'<em>affaiblissement d'espace libre</em> ou <em>free-space path loss </em><a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CCsQFjAB&url=https%3A%2F%2Fwww.itu.int%2Fdms_pubrec%2Fitu-r%2Frec%2Fp%2FR-REC-P.525-2-199408-I!!PDF-E.pdf&ei=aRbJU6StKMPksASlg4CwBA&usg=AFQjCNHPoFzlWmkl9yaSlq8GJzFORioY_A&sig2=GxabrlkhS8bNRQj5NIUmCQ&bvm=bv.71198958,d.cWc&cad=rja" target="_blank">[1]</a> <a href="http://en.wikipedia.org/wiki/Free-space_path_loss" target="_blank">[2]</a>, permettant ainsi de terminer la distance entre un transmetteur et un récepteur radio de manière théorique. Ainsi, on pouvait approximer le positionnement des stations de bases, et donc des cellules.
+						    		</dd>
+						    		<dd>
+						    		<b>Design d'antennes - <em>2012</em></b>
+						    		<br/>
+
+						    		Conception d'antennes et de réseaux d'antennes à partir d'un logiciel de conception	assistée (CAD) AMF - EMS et 
+						    		MatLab. En équipe de 3 personnes.<br/>
+						    		Le design d'antennes (patch et réseaux d'antennes) se basait sur le calcul du bilan de liaison. Ce dernier prend en compte tous les gains/pertes pour une liaison radio entre un émetteur et un récepteur.<br/>
+						    		<em><u>Notions utilisées:</u> adaptation d'impédances, ligne de transmission, antenne dipôle demi-onde, réseaux d'antennes et BeamForming Network, rayonnement "broadside" et "end-fire"</em> <a href="/ressources/cours_antennes.pdf" target="_blank">[3]</a> <a href="/ressources/antennas.pdf" target="_blank">[4]</a>
+						    		</dd>
+
+					    		<dt>Espagnol & Italien</dt>
+						    		<dd>
+						    		<b>Dimensionnement d'un réseau mobile 3G - <em>2012</em></b>
+						    		<br/>
+						    		Le projet consistait en la planification d'un réseau cellulaire de type W-CDMA (UMTS). En trinôme, le design se faisait grâce à l'outil de planification réseau ICS Telecom. Le modèle de propagation ITU-R P.525 était utilisé pour déterminer l'<em>affaiblissement d'espace libre</em> ou <em>free-space path loss </em><a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CCsQFjAB&url=https%3A%2F%2Fwww.itu.int%2Fdms_pubrec%2Fitu-r%2Frec%2Fp%2FR-REC-P.525-2-199408-I!!PDF-E.pdf&ei=aRbJU6StKMPksASlg4CwBA&usg=AFQjCNHPoFzlWmkl9yaSlq8GJzFORioY_A&sig2=GxabrlkhS8bNRQj5NIUmCQ&bvm=bv.71198958,d.cWc&cad=rja" target="_blank">[1]</a> <a href="http://en.wikipedia.org/wiki/Free-space_path_loss" target="_blank">[2]</a>, permettant ainsi de terminer la distance entre un transmetteur et un récepteur radio de manière théorique. Ainsi, on pouvait approximer le positionnement des stations de bases, et donc des cellules.
+						    		</dd>
+						    		<dd>
+						    		<b>Design d'antennes - <em>2012</em></b>
+						    		<br/>
+
+						    		Conception d'antennes et de réseaux d'antennes à partir d'un logiciel de conception	assistée (CAD) AMF - EMS et 
+						    		MatLab. En équipe de 3 personnes.<br/>
+						    		Le design d'antennes (patch et réseaux d'antennes) se basait sur le calcul du bilan de liaison. Ce dernier prend en compte tous les gains/pertes pour une liaison radio entre un émetteur et un récepteur.<br/>
+						    		<em><u>Notions utilisées:</u> adaptation d'impédances, ligne de transmission, antenne dipôle demi-onde, réseaux d'antennes et BeamForming Network, rayonnement "broadside" et "end-fire"</em> <a href="/ressources/cours_antennes.pdf" target="_blank">[3]</a> <a href="/ressources/antennas.pdf" target="_blank">[4]</a>
+						    		</dd>
+
+					    		<dt>Chinois Mandarin</dt>
+						    		<dd>
+						    		<b>Dimensionnement d'un réseau mobile 3G - <em>2012</em></b>
+						    		<br/>
+						    		Le projet consistait en la planification d'un réseau cellulaire de type W-CDMA (UMTS). En trinôme, le design se faisait grâce à l'outil de planification réseau ICS Telecom. Le modèle de propagation ITU-R P.525 était utilisé pour déterminer l'<em>affaiblissement d'espace libre</em> ou <em>free-space path loss </em><a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CCsQFjAB&url=https%3A%2F%2Fwww.itu.int%2Fdms_pubrec%2Fitu-r%2Frec%2Fp%2FR-REC-P.525-2-199408-I!!PDF-E.pdf&ei=aRbJU6StKMPksASlg4CwBA&usg=AFQjCNHPoFzlWmkl9yaSlq8GJzFORioY_A&sig2=GxabrlkhS8bNRQj5NIUmCQ&bvm=bv.71198958,d.cWc&cad=rja" target="_blank">[1]</a> <a href="http://en.wikipedia.org/wiki/Free-space_path_loss" target="_blank">[2]</a>, permettant ainsi de terminer la distance entre un transmetteur et un récepteur radio de manière théorique. Ainsi, on pouvait approximer le positionnement des stations de bases, et donc des cellules.
+						    		</dd>
+						    		<dd>
+						    		<b>Design d'antennes - <em>2012</em></b>
+						    		<br/>
+
+						    		Conception d'antennes et de réseaux d'antennes à partir d'un logiciel de conception	assistée (CAD) AMF - EMS et 
+						    		MatLab. En équipe de 3 personnes.<br/>
+						    		Le design d'antennes (patch et réseaux d'antennes) se basait sur le calcul du bilan de liaison. Ce dernier prend en compte tous les gains/pertes pour une liaison radio entre un émetteur et un récepteur.<br/>
+						    		<em><u>Notions utilisées:</u> adaptation d'impédances, ligne de transmission, antenne dipôle demi-onde, réseaux d'antennes et BeamForming Network, rayonnement "broadside" et "end-fire"</em> <a href="/ressources/cours_antennes.pdf" target="_blank">[3]</a> <a href="/ressources/antennas.pdf" target="_blank">[4]</a>
+						    		</dd>
+					  		</dl>
+					    </small>
+					  </div>
+				  </div>
+			  </div>
 			  <div class="tab-pane fade" id="interets">soon available</div>
 			</div>
 		  </div>
@@ -357,4 +476,3 @@ Python)<br/>
 		</div>
 	</div>
 </div>
-
