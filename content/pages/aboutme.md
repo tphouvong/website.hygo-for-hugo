@@ -1,11 +1,13 @@
 ---
-title: "About Me"
+title: "About me"
 type: "page"
 url: "/aboutme"
 ---
 
-Hi there! <i class="fa fa-smile-o"></i>
-Below you can see my Résumé/CV. Feel free to contact me if you have any questions!
+<em><b> ***** dernière màj: 25 Juillet 2014 ***** </b></em>
+
+Bonjour! <i class="fa fa-smile-o"></i> <br/>
+Ci-dessous les informations concernant mon CV. N'hésitez pas à me contacter si vous avez besoins d'info.
 
 <address>
   <strong>Mr. Tien Peng HOUVONG</strong>
@@ -22,7 +24,7 @@ Below you can see my Résumé/CV. Feel free to contact me if you have any questi
 		<!-- Nav tabs -->
 		<ul class="nav nav-pills">
 		  <li><a href="#fr" data-toggle="tab">Version française</a></li>
-		  <li><a href="#en" data-toggle="tab">English version</a></li>
+		  <li><a href="#en" data-toggle="tab">English version (soon available)</a></li>
 		  <li><a href="#cv" data-toggle="tab">CV - PDF</a></li>		
 		</ul>
 		<!-- Tab panes -->
@@ -415,9 +417,10 @@ Python et Bash)<br/>
 			  <div class="tab-pane fade" id="interets">soon available</div>
 			</div>
 		  </div>
+		  
 		  <div class="tab-pane fade active" id="en">
 		  English version soon available...
-		  <!--
+		  
 			<ul class="nav nav-tabs">
 			  <li><a href="#studies" data-toggle="tab" class="text-muted">Studies</a></li>
 			  <li><a href="#skills" data-toggle="tab" class="text-muted">Skills</a></li>
@@ -431,8 +434,8 @@ Python et Bash)<br/>
 			  <div class="tab-pane fade" id="proXP">..coming in a bit..</div>
 			  <div class="tab-pane fade" id="project">..coming in a bit..</div>
 			  <div class="tab-pane fade" id="hobbies">.sooooonnn!!!..</div>
-			  -->
 			</div>
+			
 		  <div class="tab-pane fade active" id="cv">
 		  CV download soon available...
 		  <!--

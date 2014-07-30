@@ -7,7 +7,7 @@ tags: ["linux","ubuntu","xbmc","htpc"]
 
 ## Xbox Media Center...
 
-<img class="img-center center-block" src="/img/xbmc.gif" title="xbmc" />
+<img class="img-center center-block" src="/img/blog/xbmc.gif" title="xbmc" />
 
 ... plus connu sous le nom d'[XBMC](http://xbmc.org/), est un lecteur multimédia sous licence GNU GPL.
 Logiciel destiné initialement pour la console Xbox (la première), l'équipe de dév l'a porté sur les OS tels

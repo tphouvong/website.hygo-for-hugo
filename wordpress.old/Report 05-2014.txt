@@ -1,0 +1,45 @@
+Post List
+Mémo Perso
+
+test
+Posted on January 01,1970 by Tien
+test
+Posted in:Linux | | With 0 comments
+
+Portspoof
+Posted on January 01,1970 by Tien
+http://linuxaria.com/article/portspoof-an-interesting-anti-snooping-tool-for-linux?lang=en
+Posted in:Linux | | With 0 comments
+
+Petit rappel pour moi (1)
+Posted on January 01,1970 by Tien
+
+Routage à moindre coût ou par chemin le plus court
+Chaque nœud tient à jours des tables de routages indiquant le chemin pour rejoindre un nœud de
+destination. Pour chaque lien reliant les nœuds est affecté (ou calculé) un coût. Avec le doublet
+(Adresse du nœud, coût(métrique)), chaque nœud détermine le meilleur chemin pour atteindre une
+destination. Cette métrique - dépendante des différents protocoles de routage - peut se traduire en
+termes de :
+nombre de sauts (hops)
+temps de latence (dans les buffers notamment)
+en délai de transmission (et inversement distance)
+fiabilité du lien
+etc.
+Il existe des protocoles de routage où un routeur peut avoir plusieurs tables de routage et ainsi
+acheminer des données suivant une QoS/SLA requise (par rapport à la métrique, par exemple).
+Protocole de routage à vecteur de distance
+Connu sous le nom de routage de Bellman-Ford ou distance vector routing en anglais, voici ses
+caractéristiques:
+chaque nœud du réseau maintient une table de routage qui possède un doublet (nœud du réseau, coût
+pour joindre ce nœud)
+de manière périodique, chaque nœud diffuse sa table de routage à ses nœud voisins
+le nœud destinataire apprendre les destinations de son voisin
+Posted in:Réseaux | | With 0 comments
+
+Google Glass + première approche domotique
+Posted on January 01,1970 by Tien
+http://www.youtube.com/watch?feature=player_embedded&v=XuWbRwZd2IA
+Posted in:Geek,Google | Tagged:Glass,Google,Google Glass,Revolv | With 0 comments
+
+
+
