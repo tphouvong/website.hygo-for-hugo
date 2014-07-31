@@ -417,25 +417,23 @@ Python et Bash)<br/>
 			  <div class="tab-pane fade" id="interets">soon available</div>
 			</div>
 		  </div>
-		  
-		  <div class="tab-pane fade active" id="en">
-		  English version soon available...
-		  
-			<ul class="nav nav-tabs">
-			  <li><a href="#studies" data-toggle="tab" class="text-muted">Studies</a></li>
-			  <li><a href="#skills" data-toggle="tab" class="text-muted">Skills</a></li>
-			  <li><a href="#proXP" data-toggle="tab" class="text-muted">Work experiences</a></li>
-			  <li><a href="#project" data-toggle="tab" class="text-muted">Project</a></li>
-			  <li><a href="#hobbies" data-toggle="tab" class="text-muted">Hobbies</a></li>
-			</ul>
-			<div class="tab-content">
-			  <div class="tab-pane fade active" id="studies">...Available soon</div>
-			  <div class="tab-pane fade" id="skills">...Coming soon</div>
-			  <div class="tab-pane fade" id="proXP">..coming in a bit..</div>
-			  <div class="tab-pane fade" id="project">..coming in a bit..</div>
-			  <div class="tab-pane fade" id="hobbies">.sooooonnn!!!..</div>
+			<div class="tab-pane fade active" id="en">
+			  English version soon available...
+				<ul class="nav nav-tabs">
+				  <li><a href="#studies" data-toggle="tab" class="text-muted">Studies</a></li>
+				  <li><a href="#skills" data-toggle="tab" class="text-muted">Skills</a></li>
+				  <li><a href="#proXP" data-toggle="tab" class="text-muted">Work experiences</a></li>
+				  <li><a href="#project" data-toggle="tab" class="text-muted">Project</a></li>
+				  <li><a href="#hobbies" data-toggle="tab" class="text-muted">Hobbies</a></li>
+				</ul>
+				<div class="tab-content">
+				  <div class="tab-pane fade active" id="studies">...Available soon</div>
+				  <div class="tab-pane fade" id="skills">...Coming soon</div>
+				  <div class="tab-pane fade" id="proXP">..coming in a bit..</div>
+				  <div class="tab-pane fade" id="project">..coming in a bit..</div>
+				  <div class="tab-pane fade" id="hobbies">.sooooonnn!!!..</div>
+				</div>
 			</div>
-			
 		  <div class="tab-pane fade active" id="cv">
 		  CV download soon available...
 		  <!--
