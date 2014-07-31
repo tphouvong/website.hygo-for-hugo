@@ -1,30 +1,45 @@
 ---
 title: "Serveur Free RADIUS sur une Debian Wheezy, pour router/switch Cisco"
-description: "Hombre, No Te Preocupes !"
-date: "2013-02-03"
-tags: ["linux","squeeze","cisco","ntp"]
+description: "radius, cubitus, humerus..."
+date: "2013-02-26"
+tags: ["linux","squeeze","cisco","radius","authentification","AAA"]
 ---
 
 
+[RADIUS](http://fr.wikipedia.org/wiki/Remote_Authentication_Dial-In_User_Service) <del>l'os de l'avant-bras</del> (Remote Authentication Dial-In User Service) est un protocole de type C/S permettant de fournir un service centralisé d'authentification, d'autorisation et de gestion des comptes utilisateurs. 
 
-Serveur Free RADIUS sur une Debian Wheezy, pour router/switch Cisco
-Posted on January 01,1970 by Tien
-RADIUS, l'os de l'avant-bras (Remote Authentication Dial-In User Service) est un protocole de type C/S permettant de centraliser les
-données de logins (en gros, un serveur d'authentification). Créé en 1991 par Livingston (fabricant de serveurs réseaux), ce protocole était
-au départ seulement compatible pour les serveurs équipés d'interfaces série. Plus tard, l'IETF normalisera ce protocole (RFC 2866). Le but
-de ce billet est de pouvoir implémenter un serveur RADIUS libre, notamment sous Debian, en utilisant via le package FreeRADIUS. Le
-modèle de sécurité AAA (du moins pour la partie authentification et autorisation) pourra être mis en oeuvre sur les routeurs/switchs Cisco
-qui se synchroniseront avec le serveur RADIUS. FreeRADIUS sur Debian Wheezy
+Le but de ce billet est de pouvoir implémenter un serveur RADIUS libre, notamment sous Debian, en utilisant via le package FreeRADIUS. Le modèle de sécurité AAA (du moins pour la partie authentification et autorisation) pourra être mis en oeuvre sur les routeurs/switchs Cisco qui se synchroniseront avec le serveur RADIUS. 
 
-Installation des paquets:
 
+## FreeRADIUS sur Debian Wheezy 7.0
+-----------------------------------
+
+### Installation des paquets:
+
+```
 # aptitude install mysql-client mysql-server freeradius freeradius-utils freeradius-mysql php5 php-pear php5-gd php-DB
+```
 
-Test Radius
-Du type radtest [user] [password] localhost [port (default is 1812)] testing123. Test va être rejeté car
-aucun utilisateur n'a été rajouté dans la base de données
-# radtest user1 supersecret localhost 1812 testing123
+L'installation de mysql et de php permet de gérer une base de données d'utilisateurs via une interface web, non montré dans ce billet.
+Dans ce qui suit, notre base de données d'utilisateurs sera un simple fichier (ce n'est pas une _best practice_ en soi, mais je le décris ici pour des raisons de simplicités)
 
+### Définition d'un utilisateur 
+Par défaut, la configuration des utilisateurs et mots de passe associés se fait dans le fichier `/etc/freeradius/users`
+Il existe plusieurs gabarits permettant de définir un utilisateur et son mot de passe associé, ainsi que les niveaux de droit qui lui sont accordés (par exemple pour administrer du matériel Cisco). L'exemple ci-dessous permet à l'utilisateur `toto` une fois authentifié d'administrer un routeur/switch Cisco avec le niveau de privilège 15:
+
+```
+toto 	Cleartext-password:="Il0v3Y0u"
+	Service-Type = NAS-Prompt-User,
+	cisco-avpair = "shell:priv-lvl=15"
+```
+__/!\ ATTENTION /!\\__ le fichier de configuration est sensible à l'__indentation__
+
+
+### Test du serveur RADIUS en local
+La commande type à entrer dans le shell pour tester le serveur RADIUS est la suivante : `radtest <user> <user_password> {@IP|hostname radius} <port> <radius_passwd>`:
+```
+# radtest toto supersecret localhost 1812 testing123
+```
 Et sur la sortie standard, nous avons :
 Last login: Sun Jun 16 15:45:07 2013 root@localhost:~# radtest user1 supersecret localhost 1812
 testing123 Sending Access-Request of id 100 to 127.0.0.1 port 1812 User-Name = "user1" UserPassword = "supersecret" NAS-IP-Address = 127.0.0.1 NAS-Port = 1812 Message-Authenticator
@@ -190,48 +205,9 @@ AV
 service-type=7
 *Jun 16 21:04:11.786: AAA/AUTHOR/EXEC(00000007): Authorization successful
 
-Et voilà Source [1] [2]
+Et voilà 
+### Sources:
+*[1](http://wiki.freeradius.org/vendor/Cisco) 
+*[2](http://doc.ubuntu-fr.org/coovachilli#installation_et_configuration_du_serveur_radius)
+*Manipulations perso
 Posted in:Cisco,Linux,Réseaux | Tagged:Cisco,Debian,Radius,Routeur,Wheezy | With 0 comments
-
-Serveur rsyslog sous Debian Wheezy pour Cisco routeur
-Posted on January 01,1970 by Tien
-
-Rsyslog
-Rsyslog sur 172.25.0.1:514 (UDP), adresse IP du client syslog à autoriser (par ex : 172.25.0.254)
-/etc/rsyslogd.conf à la fin du fichier, rajouter:
-# # Logging for Cisco router 172.25.0.254 # local7.* /var/log/cisco
-#
-provides
-UDP
-$ModLoad
-$UDPServerRun 514$AllowedSender UDP, 172.25.0.254
-
-Puis création du fichier log, taper dans le terminal :
-
-syslog
-
-reception
-imudp
-
-# touch /var/log/cisco
-
-Puis redémarrage de rsyslog daemon:
-# /etc/init.d/rsyslog restart
-
-Cisco Router
-R1#conf tR1(config)#logging host 172.25.0.1 sequence-num-session
-R1(config)#logging trap 7
-
-et voilà! un exemple de sortie standard du serveur rsyslog:
-tien@localhost:~$ tail -f /var/log/cisco Jun 10 23:13:29 172.25.0.254 35: [syslog@9 s_sn="1"]:
-*Jun 11 01:13:20.623: %SYS-5-CONFIG_I: Configured from console by console Jun 10 23:13:30
-172.25.0.254
-36:
-[syslog@9
-s_sn="2"]:
-*Jun
-11
-01:13:21.631:
-%SYS-6LOGGINGHOST_STARTSTOP: Logging to host 172.25.0.1 port 514 started - CLI initiated
-Posted in:Cisco,Linux,Réseaux | Tagged:Cisco,Debian,Linux,Rsyslog | With 0 comments
-
