@@ -1,6 +1,10 @@
-Serveur rsyslog sous Debian Wheezy pour Cisco routeur
-Posted on January 01,1970 by Tien
+---
+title: "Configuration rapide entre un routeur cisco et un serveur rsyslog"
+date: "2013-03-16"
+tags: ["linux","debian","cisco","rsyslog"]
+---
 
+## Serveur rsyslog
 Rsyslog
 Rsyslog sur 172.25.0.1:514 (UDP), adresse IP du client syslog à autoriser (par ex : 172.25.0.254)
 /etc/rsyslogd.conf à la fin du fichier, rajouter:
