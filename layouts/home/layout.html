@@ -1,14 +1,3 @@
-<div class="lead">
-    EN COURS DE CONSTRUCTION/ MIGRATION
-    <br>
-    <em>
-        *** dernière màj : 25 juillet 2014 ***
-        <br><u><b>version finale attendue pour septembre 2014</b></u>
-    </em>
-</div>
-<br/>
-
-
 <div class="intro">
     {{ .Content }}
 </div>
@@ -40,11 +29,12 @@
                     Posted on {{ .Date.Format "02 Jan 2006" }}
                     </span>
                 </small>
-                </h3>
+                
                     <small>
-                        {{ .Description }}
+                        <em>{{ .Description }}</em>
+                        
                     </small>
-                </h3>
+                
                 <br>
                 <a class="m-btn red-striped" href="{{ .Permalink }}">Read More
                     <span class="fa fa-angle-double-right"></span>
