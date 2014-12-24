@@ -8,7 +8,7 @@ tags: ["linux","squeeze","cisco","radius","authentification","AAA"]
 
 [RADIUS](http://fr.wikipedia.org/wiki/Remote_Authentication_Dial-In_User_Service) <del>l'os de l'avant-bras</del> (Remote Authentication Dial-In User Service) est un protocole de type C/S permettant de fournir un service centralisé d'authentification, d'autorisation et de gestion des comptes utilisateurs. 
 
-Le but de ce billet est de pouvoir implémenter un serveur RADIUS libre, notamment sous Debian, en utilisant via le package FreeRADIUS. Le modèle de sécurité AAA (du moins pour la partie authentification et autorisation) pourra être mis en oeuvre sur les routeurs/switchs Cisco qui se synchroniseront avec le serveur RADIUS. 
+Le but de ce billet est de pouvoir implémenter un serveur RADIUS libre __rapidement__ (j'ai omis certains détails), notamment sous Debian, en utilisant via le package FreeRADIUS. Le modèle de sécurité AAA (du moins pour la partie authentification et autorisation) pourra être mis en oeuvre sur les routeurs/switchs Cisco qui se synchroniseront avec le serveur RADIUS. 
 
 
 ## FreeRADIUS sur Debian Wheezy 7.0
