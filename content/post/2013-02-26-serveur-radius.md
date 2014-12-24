@@ -85,148 +85,94 @@ La configuration se fait dans le fichier `/etc/freeradius/clients.conf` (toujour
 # Router Cisco client, reachable via 172.16.0.254
 ````
 
+### Ajout d'un client au serveur RADIUS
+Cela se passe là, on ajoute un routeur cisco, joignable par l'adresse 172.25.0.254/24 (pareil, _indent sensitive syntax_):
 
+```
+# vim /etc/freeradius/clients.conf
+```
 
+```
+client 172.25.0.254 {
+	secret = k3yStR0k3
+	shortname = R1
+	nastype = cisco
+}
+```
 
+où _secret=\<PSK\>_, _shortname=\<un_nom_comme_un_nom\>_, _nastype=\<NAS-specific\>_ 
+Pour _\<NASspecific\>_, voir le contenu du fichier clients.conf. Enfin rebelotte :
 
-Ajout d'un client au serveur RADIUS
-Cela se passe là, on ajoute un routeur cisco, joignable par l'adresse 172.25.0.254/24 (pareil, intentsensitive syntax):
-#
-client
-k3yStR0k3
-shortname=R1
-nastype=cisco}
-
-vim
-172.25.0.254
-
-`/etc/freeradius/clients.conf` 
-{
-
-où secret=<PSK>, shortname=<un_nom_comme_un_nom>, nastype=<NAS-specific> Pour <NASspecific>, voir le contenu du fichier clients.conf et enfin rebelotte :
+```
 # service freeradius restart
+```
 
-Vérification du port utilisé par RADIUS
+### Vérification du port utilisé par RADIUS
 D'après la RFC 2865, le port utilisé par RADIUS pour l'identification est le 1812 (UDP), ou encore
 anciennement le port 1645. Après activation du daemon freeradius, un petit netstat pour vérifier tout
 cela:
-root@localhost:/var/log# netstat -patune | grep radius udp 0 0 0.0.0.0:40980 0.0.0.0:* 112 13910
-9714/freeradius udp 0 0 0.0.0.0:1812 0.0.0.0:* 112 13905 9714/freeradius udp 0 0 0.0.0.0:1813
-0.0.0.0:* 112 13906 9714/freeradius udp 0 0 0.0.0.0:1814 0.0.0.0:* 112 13909 9714/freeradius
+
+```
+root@localhost:/var/log# netstat -patune | grep radius 
+
+udp 0 0 0.0.0.0:40980 0.0.0.0:* 112 13910 9714/freeradius 
+udp 0 0 0.0.0.0:1812 0.0.0.0:* 112 13905 9714/freeradius 
+udp 0 0 0.0.0.0:18130.0.0.0:* 112 13906 9714/freeradius 
+udp 0 0 0.0.0.0:1814 0.0.0.0:* 112 13909 9714/freeradius
 udp 0 0 127.0.0.1:18120 0.0.0.0:* 112 13908 9714/freeradius
+```
+
 Ça m'a l'air pas trop mal!
-Cisco AAA
-Je ne sais pas si ce que je vais faire en dessous fait partie des best practices du constructeur. Si ce n'est pas le cas, mes excuses Cisco-
 
-Nous utiliserons une method-list nommé AUTH-TPHO, ainsi que la liste par défaut Pour la partie
-authentication de la méthode AUTH-TPHO, le routeur interrogera dans un premier temps le serveur
-RADIUS. S'il n'y a aucune entrée correspondant à la paire login/mdp tapée par l'utilisateur, le routeur ira
-toper sa propre base (la base locale). Enfin si l'interrogation à cette dernière base n'est pas concluante,
-l'accès à ce routeur pourra se faire via le mot de passe défini par la commande enable. La méthode par
-défaut interrogera dans l'ordre le serveur radius et/ou la base locale Concernant la partie authorization,
-elle concernera l'exec mode, se basera sur la method-list par défaut, topera dans un premier temps le
-serveur RADIUS, sinon en second la base locale, sinon en dernier enable. Enfin, on appliquera la liste
-philes!
+### Cisco AAA
+_Je ne sais pas si ce que je vais faire en dessous fait partie des best practices du constructeur. Si ce n'est pas le cas, mes excuses Cisco. N'hésitez pas à commenter si amélioration possible il y a._
 
-AUTH-TPHO au vty
+Nous utiliserons une _method-list_ nommé AUTH-TPHO, ainsi que la liste par défaut Pour la partie authentication de la méthode AUTH-TPHO, le routeur interrogera dans un premier temps le serveur RADIUS. S'il n'y a aucune entrée correspondant à la paire login/mdp tapée par l'utilisateur, le routeur ira toper sa propre base (la base locale). Enfin si l'interrogation à cette dernière base n'est pas concluante, l'accès à ce routeur pourra se faire via le mot de passe défini par la commande enable. La méthode par défaut interrogera dans l'ordre le serveur radius et/ou la base locale. 
+
+Concernant la partie _authorization_, elle concernera l'_exec mode_, se basera sur la _method-list_ par défaut, topera dans un premier temps le serveur RADIUS, sinon en second la base locale, sinon en dernier enable. Enfin, on appliquera la liste AUTH-TPHO au vty.
+
+__console routeur Cisco__
+
+```
 R1#configure
-Enter
-configuration
-commands,
-one
-per
-R1(config)#username
-adminTPHO
-R1(config)#enable
-secret
-R1(config)#aaa
-R1(config)#aaa
-authentication
-login
-AUTH-TPHO
-R1(config)#aaa
-R1(config)#aaa
-
-authentication
-authorization
-
-R1(config)#radius-server
-k3yStR0k3
-
-host
-
-login
-exec
-172.25.0.1
-
-line.
-End
-secret
-
-group
-
-radius
-
-default
-default
-auth-port
-
-terminal
-CNTL/Z.
-ciscoTPHO
-cisc0TPHo
-new-model
-local
-enable
-
-with
-
-radius
-radius
-
-local
-local
-
-1812
-
-key
-
+Enter configuration commands, one per line. End with CNTL/Z.
+R1(config)#username adminTPHO secret ciscoTPHO
+R1(config)#enable secret CiSc0tPh0
+R1(config)#aaa new-model
+R1(config)#aaa authentication login AUTH-TPHO group radius local enable
+R1(config)#aaa authentication login default radius local
+R1(config)#aaa authorization exec default radius local
+R1(config)#radius-server host 172.25.0.254 auth-port 1812 key k3yStR0k3
 R1(config)#line vty 0 4
-R1(config-line)#login authentication AUTH-TPHOR1(config-line)#transport input ssh
+R1(config-line)#login authentication AUTH-TPHO
+R1(config-line)#transport input ssh
 R1(config-line)#end
 R1#copy running-config startup-config
+```
 
-Test
-On suppose avoir activer au préalable debug aaa authentication et debug aaa authorization, pour voir si
-le routeur tape bien sur le serveur Free RADIUS. On se connecte via SSH :
-tpho@pwet:~$ ssh toto@172.25.0.254 Password: Il0v3Y0u R1#
+### Test
+
+On active au préalable sur le routeur _debug aaa authentication_ et _debug aaa authorization_, pour voir si ce dernier communique bien avec le serveur FreeRADIUS. On se connecte via SSH :
+
+```
+tpho@pwet:~$ ssh toto@172.25.0.254 
+Password: Il0v3Y0u 
+```
+
 Sur le routeur, on peut observer :
-*Jun
-16
-21:04:09.410:
-AAA/BIND(00000007):
-Bind
-i/f
-*Jun 16 21:04:09.414: AAA/AUTHEN/LOGIN (00000007): Pick method list 'AUTH-TPHO'
-*Jun
-16
-21:04:11.782:
-AAA/AUTHOR/EXEC(00000007):
-processing
-AV
-priv-lvl=15
-*Jun
-16
-21:04:11.786:
-AAA/AUTHOR/EXEC(00000007):
-processing
-AV
-service-type=7
-*Jun 16 21:04:11.786: AAA/AUTHOR/EXEC(00000007): Authorization successful
 
-Et voilà 
+```
+*Jun 16 21:04:09.410: AAA/BIND(00000007): Bind i/f
+*Jun 16 21:04:09.414: AAA/AUTHEN/LOGIN (00000007): Pick method list 'AUTH-TPHO'
+*Jun 16 21:04:11.782: AAA/AUTHOR/EXEC(00000007): processing AV priv-lvl=15
+*Jun 16 21:04:11.786: AAA/AUTHOR/EXEC(00000007): processing AV service-type=7
+*Jun 16 21:04:11.786: AAA/AUTHOR/EXEC(00000007): Authorization successful
+```
+
+Et voilà !
+
 ### Sources:
-*[1](http://wiki.freeradius.org/vendor/Cisco) 
-*[2](http://doc.ubuntu-fr.org/coovachilli#installation_et_configuration_du_serveur_radius)
-*Manipulations perso
-Posted in:Cisco,Linux,Réseaux | Tagged:Cisco,Debian,Radius,Routeur,Wheezy | With 0 comments
+* [1](http://wiki.freeradius.org/vendor/Cisco) 
+* [2](http://doc.ubuntu-fr.org/coovachilli#installation_et_configuration_du_serveur_radius)
+* [3](http://evilrouters.net/2008/11/19/configuring-freeradius-to-support-cisco-aaa-clients)
+* Manipulations perso
